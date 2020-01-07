@@ -1,0 +1,13 @@
+section.lead-generation
+  .lead-generation__container.container
+    - let title = 'Lead Generation Company';
+    - let description = 'We help clients boost sales and provide full-cycle B2B lead generation, providing a continuous stream of qualified leads.';
+    - let btnTitle = 'Let’s talk';
+    - let imagePath = './../../assets/images/lead-generation';
+      h1.lead-generation__title #{title}
+      p.lead-generation__description #{description}
+      button.lead-generation__button
+        a.lead-generation__button-link.button(href="#form") #{btnTitle}
+      picture.lead-generation__picture
+        source(srcset=imagePath + '.webp')
+        img(src=imagePath + '.png', alt=title)

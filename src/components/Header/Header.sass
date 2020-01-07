@@ -1,0 +1,47 @@
+.header
+    position: sticky
+    z-index: 10
+    top: 0
+
+    background-color: $primary-white-color
+    &__container
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+
+        padding: 33px 0
+    &__nav
+        &-list
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+        &-item
+            margin-right: 70px
+            & > a
+                font-size: 20px
+
+                position: relative
+
+                text-decoration: none
+
+                color: $primary-black-color
+                &:before
+                    position: absolute
+                    bottom: -5px
+
+                    width: 0
+                    height: 5px
+
+                    content: ''
+                    transition: all .1s linear
+
+                    background-color: $primary-purple-color
+                &:hover
+                    &:before
+                        width: 100%
+                    &:last-child
+
+                        margin-right: 0
+
+

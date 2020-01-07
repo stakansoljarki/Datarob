@@ -1,0 +1,38 @@
+
+section.sales-boost
+  .sales-boost__container.container
+    - let salesBoostTitle = 'B2B sales boost';
+      .sales-boost__title #{salesBoostTitle}
+    .sales-boost__box
+      -
+        let salesBoostContent = [
+            {
+                imgPath: './../../components/Sales-boost/images/sales-boost-1',
+                altImg: '',
+                title: 'DATAROBER',
+            },
+            {
+                imgPath: './../../components/Sales-boost/images/sales-boost-2',
+                altImg: '',
+                title: 'DATA SOURCES',
+            },
+            {
+                imgPath: './../../components/Sales-boost/images/sales-boost-3',
+                altImg: '',
+                title: 'TOOLS',
+            },
+            {
+                imgPath: './../../components/Sales-boost/images/sales-boost-4',
+                altImg: '',
+                title: 'LEADS',
+            }
+        ]
+      each sourceBoostContent in salesBoostContent
+        .sales-boost__source
+          picture.sales-boost__source-picture
+            source(srcset=sourceBoostContent.imgPath + '.webp')
+            img(
+              src=sourceBoostContent.imgPath + '.png',
+              alt=sourceBoostContent.altImg
+            )
+          .sales-boost__source-title= sourceBoostContent.title

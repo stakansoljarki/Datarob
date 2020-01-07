@@ -1,0 +1,57 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "main": "src/pages/Home/Home.pug",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn cache clean && rm -rf dist && parcel src/pages/Home/Home.pug --port 8080 --open ",
+    "build:parcel": "parcel build src/pages/Home/Home.pug -d build --public-url ./ --out-file index.html",
+    "build": "yarn cache clean && rm -rf build && yarn build:parcel",
+    "csscomb": "csscomb src",
+    "lint": "yarn eslint src/**/*.js",
+    "lint:fix": " yarn eslint --fix src/**/*.js",
+    "prettify-pug:fix": "yarn prettier --write src/**/*.pug",
+    "prettify:fix": "yarn prettier --write src/**/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.pug": [
+      "yarn prettify-pug:fix"
+    ],
+    "*.css": [
+      "csscomb --tty-mode --",
+      "git add"
+    ],
+    "*.sass": [
+      "csscomb --tty-mode --",
+      "git add"
+    ],
+    "*.js": [
+      "yarn lint:fix",
+      "yarn prettify:fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.7.4",
+    "autoprefixer": "^9.7.3",
+    "parsel": "^0.3.0",
+    "postcss-modules": "^1.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@prettier/plugin-pug": "^1.1.1",
+    "csscomb": "^4.3.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.8.0",
+    "husky": "^4.0.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "pug": "^2.0.4",
+    "sass": "^1.24.0"
+  }
+}

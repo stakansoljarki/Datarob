@@ -1,0 +1,12 @@
+header.header
+  .header__container.container
+    a(href="/").header__logo-link
+      picture.header__logo
+        source(srcset="./../../assets/images/datarob-logo.webp", type="image/webp")
+        img(src="./../../assets/images/datarob-logo.png")
+    nav.header__nav
+      ul.header__nav-list
+        - let array = [{title: 'Client', link: '/'},{title: 'Blog', link: '/'},{title: 'FAQ', link: '/'},{title: 'Contact', link: '/'}]
+          each nav in array
+            li.header__nav-item
+              a(href=nav.link)= nav.title

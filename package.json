@@ -1,10 +1,9 @@
 {
-  "name": "",
   "version": "1.0.0",
   "main": "src/pages/Home/Home.pug",
   "license": "MIT",
   "scripts": {
-    "start": "yarn cache clean && rm -rf dist && parcel src/pages/Home/Home.pug --port 8080 --open ",
+    "start": "yarn cache clean && rm -rf dist && parcel src/pages/Home/Home.pug --port 3000 --open ",
     "build:parcel": "parcel build src/pages/Home/Home.pug -d build --public-url ./ --out-file index.html",
     "build": "yarn cache clean && rm -rf build && yarn build:parcel",
     "csscomb": "csscomb src",
@@ -23,11 +22,9 @@
       "yarn prettify-pug:fix"
     ],
     "*.css": [
-      "csscomb --tty-mode --",
       "git add"
     ],
     "*.sass": [
-      "csscomb --tty-mode --",
       "git add"
     ],
     "*.js": [

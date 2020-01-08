@@ -1,0 +1,48 @@
+section.how-it
+  .how-it__container.container
+    - let howItTitle = 'How it works';
+      .how-it__title.title #{howItTitle}
+    -
+      let howItContent = [
+          {
+              step: 'STEP 1',
+              title: 'Onboarding setup',
+              description: 'We together undestand your business domain, market niche and put together Ideal Costomer Profile.',
+              img: './../../components/How-it-works/images/step-1.svg'
+          },
+          {
+              step: 'STEP 2',
+              title: 'DATA RESEARCH',
+              description: 'Combining experienced data researchers and smart tools, we generate custom contacts and data accounts.',
+              img: './../../components/How-it-works/images/step-2.svg'
+          },
+          {
+              step: 'STEP 3',
+              title: 'DESIGN OUTREACh COMPAIN',
+              description: 'We develop a dedicated compaign to touch Clients by mail, LinkdIn, Messages or phone. You will only need to respond to the warm leads who are highly interested.',
+              img: './../../components/How-it-works/images/step-3.svg'
+          },
+          {
+              step: 'STEP 4',
+              title: 'Continuous improvement. a/b testing',
+              description: 'You will obtain hot leads daily. But we dont’t stop improvement and continue to modify our smart outreach. It’s a long data journey.',
+              img: './../../components/How-it-works/images/step-4.svg'
+          },
+          {
+              step: 'STEP 5',
+              title: 'dedicated team',
+              description: 'The main goal to build an effective distributed sales team. You can invest in your own ninjas and reap all the benefits of a own lead generation company.',
+              img: './../../components/How-it-works/images/step-5.svg'
+          }
+      ]
+    .how-it__box
+      each step in howItContent
+        .how-it__step
+          .how-it__content-box
+            .how-it__step-box
+              .how-it__step-item #{step.step}
+            .how-it__text-box
+              .how-it__title-step #{step.title}
+              .how-it__description #{step.description}
+          .how-it__img-box
+            img.how-it__img(src=step.img)

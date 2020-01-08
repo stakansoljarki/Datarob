@@ -14,3 +14,28 @@ body
     margin: 0 auto
     padding: 0 15px
 
+.title
+    font-size: 36px
+    font-weight: 500
+
+    position: relative
+
+    width: 100%
+    margin-bottom: 100px
+
+    text-align: center
+
+    color: $primary-gray-color
+
+    &:before
+        position: absolute
+        bottom: -5px
+        left: 50%
+
+        width: 100px
+        height: 5px
+
+        content: ''
+        transform: translateX(-50%)
+
+        background-color: $primary-purple-color

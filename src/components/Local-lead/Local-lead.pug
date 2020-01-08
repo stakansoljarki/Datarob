@@ -1,0 +1,36 @@
+section.local-lead
+  .local-lead__container.container
+    - let localLeadTitle = 'No more local lead generation!';
+      .local-lead__title.title #{localLeadTitle}
+    -
+      let localLeadContent = [
+          {
+              img: './../../components/Local-lead/images/Leadership.svg',
+              title: 'LEADERSHIP',
+              description: 'Saves your sales champions from mundane work'
+          },
+          {
+              img: './../../components/Local-lead/images/ROI.svg',
+              title: 'ROI',
+              description: 'From $2 per lead and lower client engagement cost'
+          },
+          {
+              img: './../../components/Local-lead/images/GROWTH.svg',
+              title: 'GROWTH',
+              description: 'The stream of leads is only limited by your readiness to close'
+          },
+          {
+              img: './../../components/Local-lead/images/Sources.svg',
+              title: 'SOURCES',
+              description: 'Researchers use a lot of tools and hacks to generate new data'
+          }
+      ]
+    ul.local-lead__list
+      each localLead in localLeadContent
+        li.local-lead__item-wrapper
+          .local-lead__item-box
+            img.local-lead__img-block(src=localLead.img, alt=localLead.title)
+            p.local-lead__title-block #{localLead.title}
+            p.local-lead__description-block #{localLead.description}
+      - let localLeadBackground = './../../components/Local-lead/images/lead-generation.jpg';
+        img.local-lead__background(src=localLeadBackground, alt="datarob")

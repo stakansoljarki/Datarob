@@ -1,0 +1,46 @@
+.how-it
+  &__step
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-items: center
+    & > div
+      width: 50%
+    &:nth-child(2n)
+      flex-direction: row-reverse
+  &__img
+    width: 365px
+  &__step
+    &-item
+      font:
+        size: 36px
+        weight: 500
+      color: $primary-purple-color
+      opacity: .42
+      transform: rotate(-90deg)
+      position: absolute
+      left: -50px
+      top: 34px
+      min-width: 120px
+    &-box
+      width: 115px
+      position: relative
+  &__title-step
+    font:
+      size: 22px
+      weight: 500
+    color: $primary-gray-color
+    margin-bottom: 25px
+    text-transform: uppercase
+  &__description
+    font:
+      size: 18px
+      weight: 300
+    line-height: 1.89
+    color: $primary-black-color
+  &__content
+    &-box
+      display: flex
+      position: relative
+      flex-direction: row
+

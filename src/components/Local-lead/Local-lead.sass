@@ -1,0 +1,47 @@
+.local-lead
+  &__title
+    margin-bottom: 60px
+  &__list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: flex-start
+    position: relative
+  &__item
+    &-wrapper
+      flex: 1 1 50%
+      &:nth-child(1), &:nth-child(1)
+        margin-bottom: 300px
+      &:nth-child(2n + 2)
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+
+    &-box
+      width: 100%
+      max-width: 265px
+  &__img-block
+    width: 90px
+    height: 90px
+    display: block
+    margin: 0 auto
+  &__title-block
+    font:
+      weight: bold
+      size: 22.5px
+    color: $primary-gray-color
+    letter-spacing: 2.25px
+    text-align: center
+    margin-bottom: 20px
+  &__description-block
+    font:
+      weight: 300
+      size: 19.5px
+    color: $primary-black-color
+    text-align: center
+  &__background
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)

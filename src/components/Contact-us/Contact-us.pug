@@ -1,0 +1,8 @@
+section.contact
+  .contact__container.container
+    - let contactTitle = 'Contact us';
+      .contact__title.title #{contactTitle}
+      .contact__wrapper
+        .contact__form-wrapper
+          include ./../../components/Form/Form
+        .contact__slider-wrapper

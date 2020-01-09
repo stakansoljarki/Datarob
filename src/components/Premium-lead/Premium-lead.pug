@@ -1,0 +1,29 @@
+section.premium-lead
+  .premium-lead__container.container
+    - let premiumLeadTitle = 'How we do premium lead generation service';
+      .premium-lead__title.title #{premiumLeadTitle}
+    - let premiumLeadDescription = 'For premium-quality leads, you need to work with people who understand your domain specification and can work better than a machine learning algorithm. Our vision on how to develop a premium lead generation agency:';
+      .premium-lead__description #{premiumLeadDescription}
+    .premium-lead__background
+      - let premiumLeadBG = './../../components/Premium-lead/images/premium-lead-bg.svg';
+        img(src=premiumLeadBG)
+    .premium-lead__steps
+      -
+        let premiumLeadContent = [
+            {
+                title: '#1',
+                description: 'We handle only cutting-edge domains: IT, software, consulting, social influence'
+            },
+            {
+                title: '#2',
+                description: 'We hunt the best performing employees from Cience, BANT and competitors'
+            },
+            {
+                title: '#3',
+                description: 'Strong focus on limitation of compliance regulation, GDPR, NDA policies and corporate security'
+            }
+        ]
+      each leadContent in premiumLeadContent
+        .premium-lead__step-item
+          .premium-lead__step-title #{leadContent.title}
+          .premium-lead__step-description #{leadContent.description}

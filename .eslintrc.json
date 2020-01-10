@@ -219,7 +219,12 @@
         "semi": "error",
         "semi-spacing": "error",
         "semi-style": "error",
-        "sort-imports": "error",
+        "sort-imports": ["error", {
+            "ignoreCase": true,
+            "ignoreDeclarationSort": true,
+            "ignoreMemberSort": false,
+            "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+        }],
         "sort-keys": "error",
         "sort-vars": "error",
         "space-before-blocks": "error",

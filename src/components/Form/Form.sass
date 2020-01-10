@@ -30,29 +30,25 @@
   &__attach
     position: absolute
     height: 40px
-    top: -12px
+    top: -5px
     padding-top: 15px
-    left: -66px
-    border-radius: 50%
+    left: -50px
+    border-radius: 90% 65% 76% 97%
     cursor: pointer
     z-index: 0
     font:
       size: 16px
       weight: 400
     color: rgba(45, 45, 45, 0.5)
+    &::-webkit-file-upload-button
+      visibility: hidden
     &:focus
       outline: none
-    &:before
-      content: ''
-      background-color: #fff
-      position: absolute
-      left: 53px
-      top: -3px
-      width: 60px
-      height: 60px
-      z-index: 13
     &-wrapper
       position: relative
+      margin-bottom: 30px
+      overflow: hidden
+      padding: 10px 230px 0 0
   &__new-btn
     position: relative
     cursor: pointer
@@ -71,3 +67,5 @@
       box-shadow: 0 0 15px #0462ff
     & > img
       height: 22px
+  &__submit
+    width: 100%

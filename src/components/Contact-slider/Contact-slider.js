@@ -1,12 +1,17 @@
-import Glide from "@glidejs/glide";
+import { tns } from "tiny-slider/src/tiny-slider";
 
 export const slider = () => {
-  new Glide(".contact-slider", {
-    animationDuration: 600,
-    animationTimingFunc: "linear",
-    autoplay: 2000,
-    perView: 1,
-    startAt: 0,
-    type: "carousel"
-  }).mount();
+  tns({
+    autoplay: true,
+    autoplayButtonOutput: false,
+    center: true,
+    container: ".contact-slider__slides",
+    controls: false,
+    items: 1,
+    mode: "carousel",
+    mouseDrag: true,
+    navPosition: "bottom",
+    speed: 400,
+    swipeAngle: false
+  });
 };

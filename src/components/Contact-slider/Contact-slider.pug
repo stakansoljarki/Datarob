@@ -1,6 +1,6 @@
 .contact-slider
-  div(data-glide-el="track").contact-slider__track.glide__track
-    .contact-slider__slides.glide__slides
+  div(data-glide-el="track").contact-slider__track
+    ul.contact-slider__slides
       -
         let contactSlider = [
           {
@@ -20,14 +20,11 @@
             alt: '',
             name: 'donald trump',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et blandit dui. Maecenas lacus nisl, ultrices in dictum et, interdum et diam. Pellentesque eu feugiat velit. Aenean tempus eros non ex varius, quis mollis ex maximus. Pellentesque eu feugiat velit. Aenean tempus eros non ex varius, quis mollis ex maximus.'
-          }
+          },
         ]
       each slide in contactSlider
-        .contact-slider__slide.glide__slide
-          img.contact-slider__slide-image(src=slide.img)
+        li.contact-slider__slide
+          .contact-slider__slide-image
+            img(src=slide.img)
           .contact-slider__slide-name #{slide.name}
           .contact-slider__slide-description #{slide.description}
-  .contact-slider__bullets(data-glide-el="controls[nav]")
-    button.contact-slider__bullet(data-glide-dir="=0")
-    button.contact-slider__bullet(data-glide-dir="=1")
-    button.contact-slider__bullet(data-glide-dir="=2")

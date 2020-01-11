@@ -35,13 +35,13 @@
   },
   "dependencies": {
     "@babel/preset-react": "^7.7.4",
-    "@glidejs/glide": "^3.4.1",
     "autoprefixer": "^9.7.3",
     "eslint-plugin-sort-keys-fix": "^1.1.0",
     "parsel": "^0.3.0",
     "postcss-modules": "^1.4.1",
     "scrollreveal": "^4.0.5",
-    "smooth-scroll": "^16.1.1"
+    "smooth-scroll": "^16.1.1",
+    "tiny-slider": "^2.9.2"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",

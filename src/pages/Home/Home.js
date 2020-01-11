@@ -1,10 +1,16 @@
 import { slider } from "./../../components/Contact-slider/Contact-slider";
 import SmoothScroll from "smooth-scroll";
+import scrollReveal from "scrollreveal";
+
 import "./Home.sass";
 
-document.addEventListener("DOMContentLoaded", () => {
-  const scroll = new SmoothScroll('a[href*="#"]');
+const scroll = new SmoothScroll('a[href*="#"]');
 
-  scroll();
+document.addEventListener("DOMContentLoaded", () => {
+  scrollReveal().reveal(".headline");
+  scrollReveal().reveal(".tagline", { delay: 500 });
+  scrollReveal().reveal(".punchline", { delay: 2000 });
+
   slider();
+  scroll();
 });

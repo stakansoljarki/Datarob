@@ -12,7 +12,11 @@
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
+    "plugins": [
+        "sort-keys-fix"
+    ],
     "rules": {
+        "sort-keys-fix/sort-keys-fix": "warn",
         "accessor-pairs": "error",
         "array-bracket-newline": "error",
         "array-bracket-spacing": "error",

@@ -1,5 +1,33 @@
 .contact-slider
-  ul(data-glide-el="track").contact-slider__track
-    li.contact-slider__item 1
-    li.contact-slider__item 2
-    li.contact-slider__item 3
+  div(data-glide-el="track").contact-slider__track.glide__track
+    .contact-slider__slides.glide__slides
+      -
+        let contactSlider = [
+          {
+            img: './../../components/Contact-slider/images/person.jpg',
+            alt: '',
+            name: 'VASYL ANDRIIV',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et blandit dui. Maecenas lacus nisl, ultrices in dictum et, interdum et diam. Pellentesque eu feugiat velit. Aenean tempus eros non ex varius, quis mollis ex maximus. Pellentesque eu feugiat velit. Aenean tempus eros non ex varius, quis mollis ex maximus.'
+          },
+          {
+            img: 'https://content.api.news/v3/images/bin/a6923adbc7bece73803221613f410782',
+            alt: '',
+            name: 'greta thunberg',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et blandit dui. Maecenas lacus nisl, ultrices in dictum et, interdum et diam. Pellentesque eu feugiat velit. Aenean tempus eros non ex varius, quis mollis ex maximus. Pellentesque eu feugiat velit. Aenean tempus eros non ex varius, quis mollis ex maximus.'
+          },
+          {
+            img: 'https://www.unilad.co.uk/wp-content/uploads/2015/12/person-of-the-year-2.jpg',
+            alt: '',
+            name: 'donald trump',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et blandit dui. Maecenas lacus nisl, ultrices in dictum et, interdum et diam. Pellentesque eu feugiat velit. Aenean tempus eros non ex varius, quis mollis ex maximus. Pellentesque eu feugiat velit. Aenean tempus eros non ex varius, quis mollis ex maximus.'
+          }
+        ]
+      each slide in contactSlider
+        .contact-slider__slide.glide__slide
+          img.contact-slider__slide-image(src=slide.img)
+          .contact-slider__slide-name #{slide.name}
+          .contact-slider__slide-description #{slide.description}
+  .contact-slider__bullets(data-glide-el="controls[nav]")
+    button.contact-slider__bullet(data-glide-dir="=0")
+    button.contact-slider__bullet(data-glide-dir="=1")
+    button.contact-slider__bullet(data-glide-dir="=2")

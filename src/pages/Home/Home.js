@@ -4,11 +4,10 @@ import scrollReveal from "scrollreveal";
 
 import "./Home.sass";
 
-const scroll = new SmoothScroll('a[href*="#"]');
-
 document.addEventListener("DOMContentLoaded", () => {
   scrollReveal().reveal(".headline");
   scrollReveal().reveal(".tagline", { delay: 500 });
   scrollReveal().reveal(".punchline", { delay: 2000 });
   slider();
+  new SmoothScroll('a[href*="#"]');
 });

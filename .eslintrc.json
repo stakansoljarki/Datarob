@@ -16,6 +16,7 @@
         "sort-keys-fix"
     ],
     "rules": {
+        "no-new": 0,
         "no-unused-vars": "off",
         "sort-keys-fix/sort-keys-fix": "warn",
         "accessor-pairs": "error",
@@ -138,7 +139,6 @@
         "no-negated-condition": "error",
         "no-negated-in-lhs": "error",
         "no-nested-ternary": "error",
-        "no-new": "error",
         "no-new-func": "error",
         "no-new-object": "error",
         "no-new-require": "error",

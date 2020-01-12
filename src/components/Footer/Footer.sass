@@ -71,3 +71,44 @@
       color: $primary-white-color
       &:first-child
         margin-right: 25px
+
+@media only screen and (max-width: $max-width-l-device)
+  .footer
+    &__wrapper
+      max-width: 50%
+      align-items: flex-start
+      margin-bottom: 40px
+      &:last-child
+        align-items: flex-start
+@media only screen and (max-width: $max-width-xs-device)
+  .footer
+    overflow: hidden
+    padding: 60px 0 0
+    &__wrapper
+      max-width: 100%
+      align-items: center
+      &:last-child
+        align-items: center
+    &__phone, &__map
+      &-icon
+        margin-right: 10px
+      &-wrapper
+        display: flex
+        align-items: flex-start
+    &__item
+      text-align: center
+    &__map
+      &-icon
+        position: relative
+        top: -6px
+      &-link
+        margin-bottom: 20px
+    &__lead-generation
+      & > p
+        text-align: center
+    &__icon
+      &-box
+        justify-content: center
+      &-link
+        &:nth-child(2n)
+          margin-right: 0

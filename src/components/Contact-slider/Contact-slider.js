@@ -4,6 +4,7 @@ export const slider = () => {
   tns({
     autoplay: true,
     autoplayButtonOutput: false,
+    autoplayTimeout: 3000,
     center: true,
     container: ".contact-slider__slides",
     controls: false,
@@ -11,7 +12,7 @@ export const slider = () => {
     mode: "carousel",
     mouseDrag: true,
     navPosition: "bottom",
-    speed: 400,
-    swipeAngle: false
+    speed: 600,
+    touch: true
   });
 };

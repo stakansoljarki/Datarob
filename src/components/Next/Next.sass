@@ -100,3 +100,26 @@
         weight: 300
       color: $primary-gray-color
 
+@media only screen and (max-width: $max-width-l-device)
+  .next
+    &__box
+      justify-content: center
+    &__cube
+      display: none
+    &__animals
+      padding: 30px 25px 65px
+      max-width: 340px
+      margin: 0 10px
+@media only screen and (max-width: $max-width-sm-device)
+  .next
+    &__box
+      margin-bottom: 90px
+@media only screen and (max-width: $max-width-xs-device)
+  .next
+    &__box
+      flex-wrap: wrap
+    &__animals
+      margin-bottom: 110px
+      &:last-child
+        margin-bottom: 0
+

@@ -48,3 +48,22 @@
     left: 50%
     width: 510px
     transform: translate(-50%, -50%)
+
+@media only screen and (max-width: $min-width-md-device)
+  .local-lead
+    &__background
+      width: 280px
+@media only screen and (max-width: $min-width-xs-device)
+  .local-lead
+    &__background
+      display: none
+    &__item
+      &-box
+        margin: 0 auto
+      &-wrapper
+        flex: 1 1 100%
+        &:nth-child(1), &:nth-child(1)
+          margin-bottom: 40px
+          align-items: center
+        &:nth-child(2n + 2)
+          align-items: center

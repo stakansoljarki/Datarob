@@ -1,14 +1,17 @@
 doctype html
 html(lang="en")
   head
+    title Datarob
     script(src="./Home.js")
+    meta(name="viewport", content="width=device-width,initial-scale=1")
   body
     include ./../../components/Header/Header
-    include ./../../components/Lead-generation/Lead-genaration
-    include ./../../components/Sales-boost/Sales-boost
-    include ./../../components/Local-lead/Local-lead
-    include ./../../components/How-it-works/How-it-works
-    include ./../../components/Premium-lead/Premium-lead
-    include ./../../components/Next/Next
-    include ./../../components/Contact-us/Contact-us
+    main.main
+      include ./../../components/Lead-generation/Lead-genaration
+      include ./../../components/Sales-boost/Sales-boost
+      include ./../../components/Local-lead/Local-lead
+      include ./../../components/How-it-works/How-it-works
+      include ./../../components/Premium-lead/Premium-lead
+      include ./../../components/Next/Next
+      include ./../../components/Contact-us/Contact-us
     include ./../../components/Footer/Footer

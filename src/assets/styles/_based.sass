@@ -4,6 +4,7 @@ body
   font-weight: 400
   line-height: 1.5
   color: $primary-black-color
+  position: relative
 
 button
     &:focus
@@ -17,10 +18,27 @@ a
 
 .container
   position: relative
-  width: 100%
+  width: auto
   max-width: 1170px
   margin: 0 auto
   padding: 0 15px
+@media (max-width: 1200px)
+  .container
+    max-width: 1140px
+
+@media (max-width: 992px)
+  .container
+    max-width: 960px
+
+@media (max-width: 768px)
+  .container
+    max-width: 720px
+
+@media (max-width: 576px)
+  .container
+    max-width: 540px
+
+
 
 .title
   font-size: 36px
@@ -40,3 +58,8 @@ a
     content: ''
     transform: translateX(-50%)
     background-color: $primary-purple-color
+@media only screen and (max-width: $max-width-sm-device)
+  .main
+    padding-top: 50px
+    & > section
+      overflow: hidden

@@ -3,9 +3,12 @@ header.header
     a(href="/").header__logo-link
       - let logo = './../../components/Header/images/logo.svg';
         img.header__logo(src=logo)
+    .footer__burger-box
+      img(src="./../../components/Header/images/bars-solid.svg").header__burger
     nav.header__nav
+      .header__nav-bg
       ul.header__nav-list
         - let array = [{title: 'Client', link: '/'},{title: 'Blog', link: '/'},{title: 'FAQ', link: '/'},{title: 'Contact', link: '/'}]
-          each nav in array
-            li.header__nav-item
-              a(href=nav.link)= nav.title
+        each nav in array
+          li.header__nav-item
+            a(href=nav.link)= nav.title

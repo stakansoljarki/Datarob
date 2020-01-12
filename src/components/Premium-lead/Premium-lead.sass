@@ -38,3 +38,20 @@
       max-width: 280px
       margin: 0 auto
       text-align: center
+@media only screen and (max-width: $max-width-md-device)
+  .premium-lead
+    &__step-item
+      &:nth-child(2)
+        top: -100px
+      &:nth-child(3)
+        top: -175px
+    &__description
+      margin: 0 auto 50px
+    &__background
+      display: none
+    &__steps
+      flex-direction: column
+    &__step
+      &-item
+        &:nth-child(2), &:nth-child(3)
+          top: 0

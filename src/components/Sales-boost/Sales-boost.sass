@@ -65,3 +65,17 @@
             letter-spacing: 4.5px
 
 
+@media only screen and (max-width: $min-width-md-device)
+    .sales-boost
+        &__source
+            flex: 1 1 50%
+            margin-bottom: 40px
+            &:after, &:before
+                content: none!important
+
+@media only screen and (max-width: $min-width-xs-device)
+    .sales-boost
+        &__box
+            margin-bottom: 50px
+        &__source-image
+            height: 100px

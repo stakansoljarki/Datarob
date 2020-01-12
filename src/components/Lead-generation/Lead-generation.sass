@@ -14,6 +14,7 @@
         margin-bottom: 70px
     &__button
         margin-bottom: 150px
+
     &__picture
         position: absolute
         right: 0
@@ -26,3 +27,19 @@
             object-fit: cover
 
 
+@media only screen and (max-width: $max-width-l-device)
+    .lead-generation
+        overflow: hidden
+@media only screen and (max-width: $max-width-xs-device)
+    .lead-generation
+        padding-bottom: 50px
+        &__title
+            font-size: 45px
+        &__description
+            margin-bottom: 35px
+        &__picture
+            position: relative
+            margin-bottom: 20px
+            width: 100%
+        &__button
+            margin-bottom: 40px

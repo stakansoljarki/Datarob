@@ -2,3 +2,112 @@ footer.footer
   .footer__container.container
     .footer__wrapper
       img.footer__logo(src="./../../components/Footer/images/logo.svg")
+      .footer__phone-wrapper
+        - let phoneIcon = './../../components/Footer/images/phone.svg';
+          img.footer__phone-icon(src=phoneIcon)
+        a.footer__phone-link(href="tel:+380523249548") +380523249548
+      .footer__map-wrapper
+        - let mapIcon = './../../components/Footer/images/map-marker-alt-solid.svg';
+          img.footer__map-icon(src=mapIcon)
+        a.footer__map-link Kyiv, Ivana Fedorova street 44
+        a.footer__map-link Riga, Ivana Fedorova street 44
+    .footer__wrapper
+      ul.footer__list
+        -
+          let secondWrapperContent = [
+              {
+                  title: 'Lead Generation Agency',
+                  link: '#!'
+              },
+              {
+                  title: 'Latest posts',
+                  link: '#!'
+              },
+              {
+                  title: 'Hire Data Researcher',
+                  link: '#!'
+              },
+              {
+                  title: 'Lead Generation Agency',
+                  link: '#!'
+              },
+              {
+                  title: 'Latest posts',
+                  link: '#!'
+              },
+              {
+                  title: 'Hire Data Researcher',
+                  link: '#!'
+              }
+              ]
+        each secondContent in secondWrapperContent
+          li.footer__item
+            a.footer__item-link(href=secondContent.link) #{secondContent.title}
+    .footer__wrapper
+      ul.footer__list
+        -
+          let thirdWrapperContent = [
+              {
+                  title: 'Lead Generation Agency',
+                  link: '#!'
+              },
+              {
+                  title: 'Latest posts',
+                  link: '#!'
+              },
+              {
+                  title: 'Hire Data Researcher',
+                  link: '#!'
+              },
+              {
+                  title: 'Lead Generation Agency',
+                  link: '#!'
+              },
+              {
+                  title: 'Latest posts',
+                  link: '#!'
+              },
+              {
+                  title: 'Hire Data Researcher',
+                  link: '#!'
+              }
+          ]
+        each thirdContent in thirdWrapperContent
+          li.footer__item
+            a.footer__item-link(href=thirdContent.link) #{thirdContent.title}
+    .footer__wrapper
+      .footer__icon-box
+        -
+          let footerSocialIcon = [
+              {
+                  imgPath: './../../components/Footer/images/facebook.svg',
+                  alt: '',
+                  link: '#!'
+              },
+              {
+                  imgPath: './../../components/Footer/images/twitter.svg',
+                  alt: '',
+                  link: '#!'
+              },
+              {
+                  imgPath: './../../components/Footer/images/linkedin.svg',
+                  alt: '',
+                  link: '#!'
+              },
+              {
+                  imgPath: './../../components/Footer/images/instagram.svg',
+                  alt: '',
+                  link: '#!'
+              }
+          ]
+        each socialIcon in footerSocialIcon
+          a.footer__icon-link(href=socialIcon.link)
+            .footer__icon-circle
+              img.footer__icon-svg(src=socialIcon.imgPath)
+
+      .footer__lead-generation
+        p Lead Generation Company
+        p Datarob © 2020
+      .footer__regulations-box
+        a.footer__regulations-link(href="#!") Terms of use
+        a.footer__regulations-link(href="#!") Privicy policy

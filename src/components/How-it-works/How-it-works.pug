@@ -8,31 +8,36 @@ section.how-it
               step: 'STEP 1',
               title: 'Onboarding setup',
               description: 'We together undestand your business domain, market niche and put together Ideal Costomer Profile.',
-              img: './../../components/How-it-works/images/step-1.svg'
+              img: './../../components/How-it-works/images/step-1.svg',
+              altImg: 'Step 1'
           },
           {
               step: 'STEP 2',
               title: 'DATA RESEARCH',
               description: 'Combining experienced data researchers and smart tools, we generate custom contacts and data accounts.',
-              img: './../../components/How-it-works/images/step-2.svg'
+              img: './../../components/How-it-works/images/step-2.svg',
+              altImg: 'Step 2'
           },
           {
               step: 'STEP 3',
               title: 'DESIGN OUTREACh COMPAIN',
               description: 'We develop a dedicated compaign to touch Clients by mail, LinkdIn, Messages or phone. You will only need to respond to the warm leads who are highly interested.',
-              img: './../../components/How-it-works/images/step-3.svg'
+              img: './../../components/How-it-works/images/step-3.svg',
+              altImg: 'Step 4'
           },
           {
               step: 'STEP 4',
               title: 'Continuous improvement. a/b testing',
               description: 'You will obtain hot leads daily. But we dont’t stop improvement and continue to modify our smart outreach. It’s a long data journey.',
-              img: './../../components/How-it-works/images/step-4.svg'
+              img: './../../components/How-it-works/images/step-4.svg',
+              altImg: 'Step 5'
           },
           {
               step: 'STEP 5',
               title: 'dedicated team',
               description: 'The main goal to build an effective distributed sales team. You can invest in your own ninjas and reap all the benefits of a own lead generation company.',
-              img: './../../components/How-it-works/images/step-5.svg'
+              img: './../../components/How-it-works/images/step-5.svg',
+              altImg: 'Step 6'
           }
       ]
     .how-it__box
@@ -45,4 +50,4 @@ section.how-it
               .how-it__title-step #{step.title}
               .how-it__description #{step.description}
           .how-it__img-box
-            img.how-it__img(src=step.img)
+            img.how-it__img(src=step.img, alt=step.altImg)

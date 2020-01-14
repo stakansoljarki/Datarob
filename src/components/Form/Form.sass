@@ -30,7 +30,7 @@
   &__attach
     position: absolute
     height: 40px
-    top: -5px
+    top: -3px
     padding-top: 15px
     left: -50px
     border-radius: 90% 65% 76% 97%
@@ -39,7 +39,7 @@
     font:
       size: 16px
       weight: 400
-    color: rgba(45, 45, 45, 0.5)
+    color: $primary-gray-color
     &::-webkit-file-upload-button
       visibility: hidden
     &:focus
@@ -71,6 +71,9 @@
     -webkit-appearance: none
     width: 100%
     border: none
+  & > label
+    position: absolute
+    opacity: 0
 @media only screen and (max-width: $max-width-xs-device)
   .form
     &__name, &__number, &__email, &__country

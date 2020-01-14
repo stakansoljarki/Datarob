@@ -5,19 +5,19 @@
         let contactSlider = [
           {
             img: './../../components/Contact-slider/images/person.jpg',
-            alt: '',
+            alt: 'VASYL ANDRIIV',
             name: 'VASYL ANDRIIV',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et blandit dui. Maecenas lacus nisl, ultrices in dictum et, interdum et diam. Pellentesque eu feugiat velit. Aenean tempus eros non ex varius, quis mollis ex maximus. Pellentesque eu feugiat velit. Aenean tempus eros non ex varius, quis mollis ex maximus.'
           },
           {
             img: './../../components/Contact-slider/images/person.jpg',
-            alt: '',
+            alt: 'VASYL ANDRIIV',
             name: 'VASYL ANDRIIV',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et blandit dui. Maecenas lacus nisl, ultrices in dictum et, interdum et diam. Pellentesque eu feugiat velit. Aenean tempus eros non ex varius, quis mollis ex maximus. Pellentesque eu feugiat velit. Aenean tempus eros non ex varius, quis mollis ex maximus.'
           },
           {
             img: './../../components/Contact-slider/images/person.jpg',
-            alt: '',
+            alt: 'VASYL ANDRIIV',
             name: 'VASYL ANDRIIV',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et blandit dui. Maecenas lacus nisl, ultrices in dictum et, interdum et diam. Pellentesque eu feugiat velit. Aenean tempus eros non ex varius, quis mollis ex maximus. Pellentesque eu feugiat velit. Aenean tempus eros non ex varius, quis mollis ex maximus.'
           },
@@ -25,6 +25,6 @@
       each slide in contactSlider
         li.contact-slider__slide
           .contact-slider__slide-image
-            img(src=slide.img)
+            img(src=slide.img, alt=slide.img)
           .contact-slider__slide-name #{slide.name}
           .contact-slider__slide-description #{slide.description}

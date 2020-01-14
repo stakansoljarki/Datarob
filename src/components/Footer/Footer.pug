@@ -1,14 +1,17 @@
 footer.footer
   .footer__container.container
     .footer__wrapper
-      img.footer__logo(src="./../../components/Footer/images/logo.svg")
+      img.footer__logo(
+        src="./../../components/Footer/images/logo.svg",
+        alt="Datarob-logo"
+      )
       .footer__phone-wrapper
         - let phoneIcon = './../../components/Footer/images/phone.svg';
-          img.footer__phone-icon(src=phoneIcon)
+          img.footer__phone-icon(src=phoneIcon, alt="Phone-icon")
         a.footer__phone-link(href="tel:+380523249548") +380523249548
       .footer__map-wrapper
         - let mapIcon = './../../components/Footer/images/map-marker-alt-solid.svg';
-          img.footer__map-icon(src=mapIcon)
+          img.footer__map-icon(src=mapIcon, alt="Map-icon")
         .footer__map-box
           a.footer__map-link Kyiv, Ivana Fedorova street 44
           a.footer__map-link Riga, Ivana Fedorova street 44
@@ -82,29 +85,29 @@ footer.footer
           let footerSocialIcon = [
               {
                   imgPath: './../../components/Footer/images/facebook.svg',
-                  alt: '',
+                  alt: 'facebook',
                   link: '#!'
               },
               {
                   imgPath: './../../components/Footer/images/twitter.svg',
-                  alt: '',
+                  alt: 'twitter',
                   link: '#!'
               },
               {
                   imgPath: './../../components/Footer/images/linkedin.svg',
-                  alt: '',
+                  alt: 'linkedin',
                   link: '#!'
               },
               {
                   imgPath: './../../components/Footer/images/instagram.svg',
-                  alt: '',
+                  alt: 'instagram',
                   link: '#!'
               }
           ]
         each socialIcon in footerSocialIcon
           a.footer__icon-link(href=socialIcon.link)
             .footer__icon-circle
-              img.footer__icon-svg(src=socialIcon.imgPath)
+              img.footer__icon-svg(src=socialIcon.imgPath, alt=socialIcon.alt)
 
       .footer__lead-generation
         p Lead Generation Company

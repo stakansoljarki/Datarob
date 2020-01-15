@@ -8,7 +8,7 @@ header.header
     nav.header__nav
       .header__nav-bg
       ul.header__nav-list
-        - let array = [{title: 'Client', link: '/'},{title: 'Blog', link: '/'},{title: 'FAQ', link: '/'},{title: 'Contact', link: '/'}]
+        - let array = [{title: 'Client', link: '/'},{title: 'Blog', link: '/blog'},{title: 'FAQ', link: '/lead-generation-faq-definition'},{title: 'Contact', link: '/contact'}]
         each nav in array
           li.header__nav-item
             a(href=nav.link)= nav.title

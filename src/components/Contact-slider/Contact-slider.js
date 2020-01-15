@@ -2,6 +2,7 @@ import { tns } from "tiny-slider/src/tiny-slider";
 
 export const slider = () => {
   tns({
+    SwipeAngle: "false",
     autoplay: "true",
     autoplayButtonOutput: false,
     autoplayTimeout: 3000,
@@ -12,7 +13,6 @@ export const slider = () => {
     mode: "carousel",
     mouseDrag: "true",
     navPosition: "bottom",
-    // SwipeAngle: 'false',
     preventScrollOnTouch: "auto",
     speed: 600,
     touch: "true"

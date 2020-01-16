@@ -5,17 +5,12 @@ import SmoothScroll from "smooth-scroll";
 
 import "./Home.sass";
 
-document.addEventListener("DOMContentLoaded", () => {
-  header();
-  slider();
-});
 document.addEventListener(
-  "touchstart",
+  "DOMContentLoaded",
   () => {
     new SmoothScroll('a[href*="#"]');
+    header();
+    slider();
   },
-  {
-    capture: true,
-    passive: true
-  }
+  { passive: false }
 );

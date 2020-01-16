@@ -13,7 +13,6 @@ export const slider = () => {
     mode: "carousel",
     mouseDrag: "true",
     navPosition: "bottom",
-    preventScrollOnTouch: "auto",
     speed: 600,
     touch: "true"
   });

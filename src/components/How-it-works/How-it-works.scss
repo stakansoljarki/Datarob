@@ -1,0 +1,73 @@
+.how-it{
+	&__box{
+		margin-bottom: 90px;}
+	&__step{
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		& > div{
+			width: 50%;}
+		&:nth-child(2n){
+			flex-direction: row-reverse;}}
+	&__img{
+		width: 365px;}
+	&__step{
+		&-item{
+			position: absolute;
+			top: 34px;
+			left: -50px;
+
+			min-width: 120px;
+
+			transform: rotate(-90deg);
+
+			color: $primary-purple-color;
+
+			font:{
+				size: 36px;
+				weight: 500;}}
+		&-box{
+			position: relative;
+
+			width: 115px;}}
+	&__title-step{
+		margin-bottom: 25px;
+
+		text-transform: uppercase;
+
+		color: $primary-gray-color;
+
+		font:{
+			size: 22px;
+			weight: 500;}}
+	&__description{
+		color: $primary-black-color;
+
+		font:{
+			size: 18px;
+			weight: 300;};
+		line-height: 1.89;}
+	&__content{
+		&-box{
+			position: relative;
+
+			display: flex;
+			flex-direction: row;}}}
+@media only screen and (max-width: $max-width-md-device){
+	.how-it{
+		&__step-item{
+			left: -50px;}}}
+@media only screen and (max-width: $max-width-xs-device){
+	.how-it{
+		&__step{
+			margin-bottom: 40px;
+			&-item{
+				left: -65px;}}
+		&__content-box{
+			width: calc(70% - 20px)!important;
+			padding-left: 20px;}
+		&__img{
+			width: auto;
+			&-box{
+				width: 30%!important;}}}}

@@ -1,64 +1,76 @@
 body
-  font-family: $primary-font
-  font-size: 16px
-  font-weight: 400
-  line-height: 1.5
-  color: $primary-black-color
-  position: relative
+	position: relative
+
+	color: $primary-black-color
+
+	font-family: $primary-font
+	font-size: 16px
+	font-weight: 400
+	line-height: 1.5
 
 button
-    &:focus
-        outline: none
-        & > a
-            box-shadow: 0 0 15px #0462ff
+	&:focus
+		outline: none
+		& > a
+			box-shadow: 0 0 15px #0462ff
 
 a
-    &:focus
-        outline: none
+	&:focus
+		outline: none
 
 .container
-  position: relative
-  width: auto
-  max-width: 1170px
-  margin: 0 auto
-  padding: 0 15px
+	position: relative
+
+	width: auto
+	max-width: 1170px
+	margin: 0 auto
+	padding: 0 15px
 @media (max-width: 1200px)
-  .container
-    max-width: 1140px
+	.container
+		max-width: 1140px
 
 @media (max-width: 992px)
-  .container
-    max-width: 960px
+	.container
+		max-width: 960px
 
 @media (max-width: 768px)
-  .container
-    max-width: 720px
+	.container
+		max-width: 720px
 
 @media (max-width: 576px)
-  .container
-    max-width: 540px
+	.container
+		max-width: 540px
 .title
-  font-size: 36px
-  font-weight: 500
-  position: relative
-  width: 100%
-  margin-bottom: 100px
-  text-align: center
-  color: $primary-gray-color
-  &:before
-    position: absolute
-    bottom: -10px
-    left: 50%
-    width: 100px
-    height: 5px
-    content: ''
-    transform: translateX(-50%)
-    background-color: $primary-purple-color
+	position: relative
+
+	width: 100%
+	margin-bottom: 100px
+
+	text-align: center
+
+	color: $primary-gray-color
+
+	font-size: 36px
+	font-weight: 500
+	&:before
+		position: absolute
+		bottom: -10px
+		left: 50%
+
+		width: 100px
+		height: 5px
+
+		content: ""
+		transform: translateX(-50%)
+
+		background-color: $primary-purple-color
 @media only screen and (max-width: $max-width-md-device)
-  .main
-    overflow: hidden
+	.main
+		overflow: hidden
 @media only screen and (max-width: $max-width-sm-device)
-  .main
-    padding-top: 50px
-    & > section
-      overflow: hidden
+	.main
+		padding-top: 50px
+		& > section
+			overflow: hidden
+
+

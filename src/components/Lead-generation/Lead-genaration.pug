@@ -1,13 +1,13 @@
 section.lead-generation
   .lead-generation__container.container
     - let title = 'Lead Generation Company';
-    - let description = 'We help clients boost sales and provide full-cycle B2B lead generation, providing a continuous stream of qualified leads.';
+    - let description = 'Datarob boosts sales by building full-cycle B2B lead generation as a continuous stream of qualified leads.';
     - let btnTitle = 'Let’s talk';
     - let imagePath = './../../components/Lead-generation/images/lead-generation.svg';
-      h1.lead-generation__title.headline #{title}
-      p.lead-generation__description.tagline #{description}
+      h1.lead-generation__title.headline= title
+      p.lead-generation__description.tagline= description
       picture.lead-generation__picture
         source(srcset=imagePath)
         img(src=imagePath, alt=title)
       button.lead-generation__button.punchline
-        a.lead-generation__button-link.button(href="#contact-form") #{btnTitle}
+        a.lead-generation__button-link.button(href="#contact-form")= btnTitle

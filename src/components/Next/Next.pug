@@ -1,13 +1,13 @@
 section.next
   .next__container.container
-    - let nextTitle = 'What is next?';
-    - let nextDescription = "Let's discuss our next steps. Select an option which is the most suitable for you and fill the contact form";
-      .next__title.title #{nextTitle}
+    - let nextTitle = 'When will you get new Clients?\n';
+    - let nextDescription = "Let's discuss our next steps. Select the most suitable option for you and fill out the contact form\n";
+      h3.next__title.title #{nextTitle}
       .next__description #{nextDescription}
     .next__box
       .next__free-box.next__animals
-        - let freeTitle = 'FREE LEADS';
-        - let freeDescription = 'We generate and research 50-100 contacts of your potential clients, which you can try to convert into Clients by reaching them out yourself. Because we don’t know your business yet, we won’t be able to create the best message and develop a customer engagement strategy. But give us some time...';
+        - let freeTitle = 'FREE LEADS\n';
+        - let freeDescription = 'We find manually and research 50-100 unique sales leads. You will try to convert those into Clients by reaching them out yourself.  If you need Sales Ops and thousands of leads monthly kindly go to the next option.';
         - let freeSVG = './../../components/Next/images/turtle.svg';
           .next__animals-title #{freeTitle}
           .next__animals-description #{freeDescription}
@@ -16,7 +16,7 @@ section.next
 
       .next__start-width.next__animals
         - let startTitle = 'START WITH GUARANTEE';
-        - let startDescription = 'Do you want to give a try to the power of a lead generation factory? Datarob provides a money-back guarantee for the first month. If expert team does not provide coverage for the agreed KPIs, we’ll provide a refund. \n';
+        - let startDescription = 'Datarob suggests starting packages includes: lead research, outbound sales operation and integration with your mail, CRM and analytics systems. Do you want to give a try to the power? Fill contact form and wait for a call with your experts.  We develop unique customer engagement strategy. ';
         - let startSVG = './../../components/Next/images/cat.svg';
           .next__animals-title #{startTitle}
           .next__animals-description #{startDescription}

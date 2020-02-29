@@ -1,7 +1,7 @@
 section.local-lead
   .local-lead__container.container
     - let localLeadTitle = 'No more local lead generation!';
-      .local-lead__title.title #{localLeadTitle}
+      h2.local-lead__title.title #{localLeadTitle}
     -
       let localLeadContent = [
           {
@@ -11,8 +11,8 @@ section.local-lead
           },
           {
               img: './../../components/Local-lead/images/ROI.svg',
-              title: 'ROI',
-              description: 'From $2 per lead and lower client engagement cost'
+              title: 'Lower CAC',
+              description: 'Improve your Client Acquisition Cost with near free leads'
           },
           {
               img: './../../components/Local-lead/images/GROWTH.svg',
@@ -22,7 +22,7 @@ section.local-lead
           {
               img: './../../components/Local-lead/images/Sources.svg',
               title: 'SOURCES',
-              description: 'Researchers use a lot of tools and hacks to generate new data'
+              description: 'Researchers use numerous tools and hacks to generate new data'
           }
       ]
     ul.local-lead__list

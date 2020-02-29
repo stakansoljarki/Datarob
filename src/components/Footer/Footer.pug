@@ -54,12 +54,11 @@ footer.footer
           let thirdWrapperContent = [
               {
                   title: 'Lead Generation Agency',
-                  link: 'https://datarob.com/lead-generation-agency/\n'
+                  link: 'https://datarob.com/lead-generation-agency/'
               },
               {
                   title: 'hire researcher\n',
-                  link: 'https://datarob.com/hire-data-researcher/\n' +
-                          ''
+                  link: 'https://datarob.com/hire-data-researcher/'
               },
               {
                   title: 'software companies near me\n',
@@ -107,7 +106,7 @@ footer.footer
               }
           ]
         each socialIcon in footerSocialIcon
-          a.footer__icon-link(href=socialIcon.link)
+          a.footer__icon-link
             .footer__icon-circle
               img.footer__icon-svg(src=socialIcon.imgPath, alt=socialIcon.alt)
 

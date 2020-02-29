@@ -6,9 +6,7 @@
     "start": "yarn cache clean && rm -rf dist && parcel src/pages/Home/Home.pug --port 3000 --open ",
     "build:parcel": "parcel build src/pages/Home/Home.pug -d build --public-url ./ --out-file index.html",
     "build": "yarn cache clean && rm -rf build && yarn build:parcel",
-    "csscomb": "csscomb src",
-    "lint": "yarn eslint src/**/*.js",
-    "lint:fix": " yarn eslint --fix src/**/*.js",
+    "csscomb": "csscomb src -c .csscomb.json",
     "prettify-pug:fix": "yarn prettier --write src/**/*.pug",
     "prettify:fix": "yarn prettier --write src/**/*.js"
   },
@@ -21,16 +19,11 @@
     "*.pug": [
       "yarn prettify-pug:fix"
     ],
-    "*.css": [
-      "git add"
-    ],
-    "*.sass": [
-      "git add"
+    "*.scss": [
+      "csscomb --tty-mode --"
     ],
     "*.js": [
-      "yarn lint:fix",
-      "yarn prettify:fix",
-      "git add"
+      "yarn prettify:fix"
     ]
   },
   "dependencies": {

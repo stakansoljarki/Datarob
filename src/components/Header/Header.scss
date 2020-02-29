@@ -1,0 +1,181 @@
+.header {
+	position: sticky;
+	z-index: 10;
+	top: 0;
+
+	background-color: $primary-white-color;
+
+	&__burger {
+		display: none;
+		}
+
+	&__logo {
+		width: 141px;
+		height: 27px;
+		}
+
+	&__container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		padding-top: 33px;
+		padding-bottom: 33px;
+		}
+
+	&__nav {
+		&-list {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			}
+
+		&-item {
+			margin-right: 70px;
+
+			& > a {
+				position: relative;
+
+				text-decoration: none;
+
+				color: $primary-black-color;
+				border-radius: 10px;
+
+				font-size: 20px;
+
+				&:before {
+					position: absolute;
+					bottom: -5px;
+
+					width: 0;
+					height: 5px;
+
+					content: "";
+					transition: all 0.1s linear;
+
+					background-color: $primary-purple-color;
+					}
+
+				&:hover {
+					&:before {
+						width: 100%;
+						}
+
+					&:last-child {
+						margin-right: 0;
+						}
+					}
+
+				&:focus-within {
+					&:before {
+						width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+@media only screen and (max-width: $max-width-sm-device) {
+	.header {
+		position: fixed;
+		z-index: 10;
+
+		width: 100vw;
+
+		&__logo {
+			position: relative;
+			z-index: 10;
+			}
+
+		&__burger {
+			position: relative;
+			z-index: 10;
+
+			display: flex;
+
+			width: 25px;
+
+			cursor: pointer;
+
+			&-box {
+				position: absolute;
+				right: 25px;
+				}
+			}
+
+		&__container {
+			position: relative;
+			z-index: 10;
+			}
+
+		&__nav {
+			position: absolute;
+
+			width: 100%;
+
+			&-bg {
+				position: absolute;
+				z-index: 5;
+				top: -33px;
+				left: 50%;
+
+				width: 120%;
+				height: 100px;
+
+				transform: translateX(-50%);
+
+				background: white;
+				}
+
+			&-list {
+				position: absolute;
+				z-index: -1;
+				top: -500px;
+				left: 50%;
+
+				overflow: hidden;
+				align-items: center;
+				flex-direction: column;
+
+				width: 100vw;
+				padding: 20px;
+
+				transition: all 0.4s ease-in-out;
+				transform: translateX(-52%);
+
+				color: $primary-white-color;
+				background-color: $primary-purple-color;
+
+				&--active {
+					top: 65px;
+
+					display: flex;
+					}
+				}
+
+			&-item {
+				margin: 0 auto 10px;
+
+				&:last-child {
+					margin: 0 auto 0;
+					}
+
+				& > a {
+					color: $primary-white-color;
+					}
+				}
+			}
+		}
+	}
+
+@media only screen and (max-width: $max-width-xs-device) {
+	.header {
+		&__nav {
+			&-list {
+				transform: translateX(-54%);
+				}
+			}
+		}
+	}

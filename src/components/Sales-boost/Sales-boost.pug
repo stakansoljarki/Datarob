@@ -1,31 +1,30 @@
-
 section.sales-boost
-  .sales-boost__container.container
-    - let salesBoostTitle = 'B2B sales boost';
-      .sales-boost__title.title.headline #{salesBoostTitle}
-    .sales-boost__box
-      -
-        let salesBoostContent = [
-            {
-                imgPath: './../../components/Sales-boost/images/sales-boost-1.svg',
-                altImg: ''
-            },
-            {
-                imgPath: './../../components/Sales-boost/images/sales-boost-2.svg',
-                altImg: ''
-            },
-            {
-                imgPath: './../../components/Sales-boost/images/sales-boost-3.svg',
-                altImg: ''
-            },
-            {
-                imgPath: './../../components/Sales-boost/images/sales-boost-4.svg',
-                altImg: ''
-            }
-        ]
-      each sourceBoostContent in salesBoostContent
-        .sales-boost__source
-          img.sales-boost__source-image(
-            src=sourceBoostContent.imgPath,
-            alt=sourceBoostContent.altImg
-          )
+    .sales-boost__container.container
+        - let salesBoostTitle = 'B2B sales boost';
+            .sales-boost__title.title.headline #{salesBoostTitle}
+        .sales-boost__box
+            -
+                let salesBoostContent = [
+                    {
+                        imgPath: './../../components/Sales-boost/images/sales-boost-1.svg',
+                        altImg: ''
+                    },
+                    {
+                        imgPath: './../../components/Sales-boost/images/sales-boost-2.svg',
+                        altImg: ''
+                    },
+                    {
+                        imgPath: './../../components/Sales-boost/images/sales-boost-3.svg',
+                        altImg: ''
+                    },
+                    {
+                        imgPath: './../../components/Sales-boost/images/sales-boost-4.svg',
+                        altImg: ''
+                    }
+                ]
+            each sourceBoostContent in salesBoostContent
+                .sales-boost__source
+                    img.sales-boost__source-image(
+                        src=sourceBoostContent.imgPath,
+                        alt=sourceBoostContent.altImg
+                    )

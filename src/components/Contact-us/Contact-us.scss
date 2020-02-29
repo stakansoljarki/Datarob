@@ -1,0 +1,27 @@
+@import "../Form/Form";
+@import "src/components/Contact-slider/Contact-slider";
+
+.contact {
+	margin-bottom: 100px;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		& > div {
+			position: relative;
+
+			max-width: 50%;
+			padding-bottom: 50px;
+			}
+		}
+	}
+
+@media only screen and (max-width: $max-width-md-device) {
+	.contact__wrapper > div {
+		max-width: 100%;
+		margin: 0 auto;
+		}
+	}

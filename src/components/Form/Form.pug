@@ -38,10 +38,10 @@ form#contact-form.form(
   )
   label(for="formTextarea") Message
   .form__attach-wrapper
-    label(for="upload").form__new-btn
+    label.form__new-btn(for="upload")
       img(
         src="./../../components/Form/images/arrow-up-solid.svg",
         alt="upload-icon"
       )
-    input#upload(type="file", name="upload").form__attach
+    input#upload.form__attach(type="file", name="upload")
   input.form__submit.button(type="submit", value="SEND MESSAGE")

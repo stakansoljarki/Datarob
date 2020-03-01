@@ -21,65 +21,29 @@ footer.footer
           let secondWrapperContent = [
               {
                   title: 'Lead Generation Agency',
-                  link: 'https://datarob.com/lead-generation-agency/\n'
+                  link: 'https://datarob.com/lead-generation-agency/'
               },
               {
-                  title: 'hire researcher\n',
-                  link: 'https://datarob.com/hire-data-researcher/\n' +
-                          ''
+                  title: 'hire researcher',
+                  link: 'https://datarob.com/hire-data-researcher/'
               },
               {
-                  title: 'software companies near me\n',
-                  link: 'https://datarob.com/software-companies-near-me/\n'
+                  title: 'Ideal Customer Profile',
+                  link: 'https://datarob.com/ideal-customer-profile-b2b-full-guide-definition-templates-creation-segmentation/'
               },
               {
-                  title: 'lead generation specialist\n',
-                  link: 'https://datarob.com/lead-generation-agency/\n'
+                  title: 'outbound lead generation',
+                  link: 'https://datarob.com/outbound-lead-generation/'
               },
               {
-                  title: 'Information vs data vs knowledge\n',
-                  link: 'https://datarob.com/information-vs-data-vs-knowledge/'
-              },
-              {
-                  title: 'lead generation for it companies\n',
-                  link: 'https://datarob.com/lead-generation-for-it-companies/\n'
+                  title: 'local lead generation',
+                  link: 'https://datarob.com/local-lead-generation//'
               }
               ]
         each secondContent in secondWrapperContent
           li.footer__item
             a.footer__item-link(href=secondContent.link, target="_blank") #{secondContent.title}
     .footer__wrapper
-      ul.footer__list
-        -
-          let thirdWrapperContent = [
-              {
-                  title: 'Lead Generation Agency',
-                  link: 'https://datarob.com/lead-generation-agency/'
-              },
-              {
-                  title: 'hire researcher\n',
-                  link: 'https://datarob.com/hire-data-researcher/'
-              },
-              {
-                  title: 'software companies near me\n',
-                  link: 'https://datarob.com/software-companies-near-me/\n'
-              },
-              {
-                  title: 'lead generation specialist\n',
-                  link: 'https://datarob.com/lead-generation-agency/\n'
-              },
-              {
-                  title: 'Information vs data vs knowledge\n',
-                  link: 'https://datarob.com/information-vs-data-vs-knowledge/'
-              },
-              {
-                  title: 'lead generation for it companies\n',
-                  link: 'https://datarob.com/lead-generation-for-it-companies/\n'
-              }
-          ]
-        each thirdContent in thirdWrapperContent
-          li.footer__item
-            a.footer__item-link(href=thirdContent.link, target="_blank") #{thirdContent.title}
     .footer__wrapper
       .footer__icon-box
         -

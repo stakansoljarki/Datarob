@@ -1,14 +1,35 @@
 header.header
   .header__container.container
-    a(href="/").header__logo-link
+    a.header__logo-link(href="/")
       - let logo = './../../components/Header/images/logo.svg';
         img.header__logo(src=logo, alt="datarob-logo")
     .footer__burger-box
-      img(src="./../../components/Header/images/bars-solid.svg", alt="burger").header__burger
+      img.header__burger(
+        src="./../../components/Header/images/bars-solid.svg",
+        alt="burger"
+      )
     nav.header__nav
       .header__nav-bg
       ul.header__nav-list
-        - let array = [{title: 'Client', link: '/'},{title: 'Blog', link: '/blog'},{title: 'FAQ', link: '/lead-generation-faq-definition'},{title: 'Contact', link: '/contact'}]
+        -
+          let array = [
+              {
+                  title: 'Clients',
+                  link: '/clients/'
+              },
+              {
+                  title: 'Blog',
+                  link: '/blog/'
+              },
+              {
+                  title: 'FAQ',
+                  link: '/lead-generation-faq-definition/'
+              },
+              {
+                  title: 'Contact',
+                  link: '/contact/'
+              }
+          ]
         each nav in array
           li.header__nav-item
             a(href=nav.link)= nav.title

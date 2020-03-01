@@ -40,7 +40,9 @@
 		&:last-child {
 			align-items: flex-end;
 			}
+
 		}
+
 
 	&__logo {
 		width: 148px;
@@ -156,13 +158,22 @@
 		&__wrapper {
 			align-items: flex-start;
 
-			max-width: 50%;
+			max-width: calc(33% - 22px);
 			margin-bottom: 40px;
+			padding-right: 30px;
+			&:nth-child(3){
+				display: none;
+				}
 
 			&:last-child {
 				align-items: flex-start;
+
+				padding-right: 0;
 				}
 			}
+
+
+
 		}
 	}
 
@@ -180,6 +191,9 @@
 			&:last-child {
 				align-items: center;
 				}
+
+
+
 			}
 
 		&__phone, &__map {

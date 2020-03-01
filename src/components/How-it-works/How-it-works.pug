@@ -1,41 +1,41 @@
 section.how-it
   .how-it__container.container
-    - let howItTitle = 'How it works';
-      .how-it__title.title #{howItTitle}
+    - let howItTitle = 'How leadgen works';
+      h2.how-it__title.title #{howItTitle}
     -
       let howItContent = [
           {
               step: 'STEP 1',
               title: 'Onboarding setup',
-              description: 'We together undestand your business domain, market niche and put together Ideal Costomer Profile.',
+              description: 'Together we dive deep into your business domain, market niche and put together Ideal Customer Profile.',
               img: './../../components/How-it-works/images/step-1.svg',
               altImg: 'Step 1'
           },
           {
               step: 'STEP 2',
               title: 'DATA RESEARCH',
-              description: 'Combining experienced data researchers and smart tools, we generate custom contacts and data accounts.',
+              description: 'Combining experienced data researchers and smart tools, we can identify hundreds of potential Clients per week.',
               img: './../../components/How-it-works/images/step-2.svg',
               altImg: 'Step 2'
           },
           {
               step: 'STEP 3',
-              title: 'DESIGN OUTREACh COMPAIN',
-              description: 'We develop a dedicated compaign to touch Clients by mail, LinkdIn, Messages or phone. You will only need to respond to the warm leads who are highly interested.',
+              title: 'DESIGN OUTREACH CAMPAIGN',
+              description: 'We set up a targeted campaign to touch Clients via email, LinkedIn, socials or phone. You will only need to respond to the warm leads who are highly interested.',
               img: './../../components/How-it-works/images/step-3.svg',
               altImg: 'Step 4'
           },
           {
               step: 'STEP 4',
-              title: 'Continuous improvement. a/b testing',
-              description: 'You will obtain hot leads daily. But we dont’t stop improvement and continue to modify our smart outreach. It’s a long data journey.',
+              title: 'CONTINUOUS IMPROVEMENT. A/B TESTING',
+              description: 'You will obtain hot leads daily. But we don\'t stop improving and optimizing smart outreach. Your Data Journey starts here.',
               img: './../../components/How-it-works/images/step-4.svg',
               altImg: 'Step 5'
           },
           {
               step: 'STEP 5',
-              title: 'dedicated team',
-              description: 'The main goal to build an effective distributed sales team. You can invest in your own ninjas and reap all the benefits of a own lead generation company.',
+              title: 'DEDICATED TEAM\n',
+              description: 'The main goal is to build an effective distributed sales team. Train  your own ninjas and reap all the benefits of your own leadgen Army.',
               img: './../../components/How-it-works/images/step-5.svg',
               altImg: 'Step 6'
           }
@@ -45,9 +45,9 @@ section.how-it
         .how-it__step
           .how-it__content-box
             .how-it__step-box
-              .how-it__step-item #{step.step}
+              .how-it__step-item= step.step
             .how-it__text-box
-              .how-it__title-step #{step.title}
-              .how-it__description #{step.description}
+              h3.how-it__title-step= step.title
+              .how-it__description= step.description
           .how-it__img-box
             img.how-it__img(src=step.img, alt=step.altImg)

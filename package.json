@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "main": "src/pages/Home/Home.pug",
+  "main": "index.html",
   "license": "MIT",
   "scripts": {
     "start": "yarn cache clean && rm -rf dist && parcel src/pages/Home/Home.pug --port 3000 --open ",

@@ -17,13 +17,16 @@
   },
   "lint-staged": {
     "*.scss": [
-      "csscomb --tty-mode --"
+      "csscomb --tty-mode --",
+      "git add "
     ],
     "*.pug": [
-      "yarn prettify-pug:fix"
+      "yarn prettify-pug:fix",
+      "git add "
     ],
     "*.js": [
-      "yarn prettify:fix"
+      "yarn prettify:fix",
+      "git add "
     ]
   },
   "dependencies": {

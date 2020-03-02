@@ -5117,21 +5117,25 @@ parcelRequire = (function(modules, cache, entry, globalName) {
         var _tinySlider = require("tiny-slider/src/tiny-slider");
 
         var slider = function slider() {
-          (0, _tinySlider.tns)({
-            SwipeAngle: "false",
-            autoplay: "true",
-            autoplayButtonOutput: false,
-            autoplayTimeout: 3000,
-            center: "true",
-            container: ".contact-slider__slides",
-            controls: false,
-            items: 1,
-            mode: "carousel",
-            mouseDrag: "true",
-            navPosition: "bottom",
-            speed: 600,
-            touch: "true"
-          });
+          var sliderClass = document.querySelector(".contact-slider__slides");
+
+          if (sliderClass) {
+            (0, _tinySlider.tns)({
+              SwipeAngle: "false",
+              autoplay: "true",
+              autoplayButtonOutput: false,
+              autoplayTimeout: 3000,
+              center: "true",
+              container: ".contact-slider__slides",
+              controls: false,
+              items: 1,
+              mode: "carousel",
+              mouseDrag: "true",
+              navPosition: "bottom",
+              speed: 600,
+              touch: "true"
+            });
+          }
         };
 
         exports.slider = slider;
@@ -5729,7 +5733,7 @@ parcelRequire = (function(modules, cache, entry, globalName) {
           var hostname = "" || location.hostname;
           var protocol = location.protocol === "https:" ? "wss" : "ws";
           var ws = new WebSocket(
-            protocol + "://" + hostname + ":" + "56473" + "/"
+            protocol + "://" + hostname + ":" + "59231" + "/"
           );
 
           ws.onmessage = function(event) {

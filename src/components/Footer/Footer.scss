@@ -40,9 +40,7 @@
 		&:last-child {
 			align-items: flex-end;
 			}
-
 		}
-
 
 	&__logo {
 		width: 148px;
@@ -135,8 +133,13 @@
 		}
 
 	&__lead-generation {
-		& > p {
+		& > p,
+		& > a {
+			display: block;
+
 			text-align: right;
+
+			color: $primary-white-color;
 			}
 		}
 
@@ -151,6 +154,9 @@
 				}
 			}
 		}
+	&__mail {
+		font-size: 24px;
+		}
 	}
 
 @media only screen and (max-width: $max-width-l-device) {
@@ -161,7 +167,7 @@
 			max-width: calc(33% - 22px);
 			margin-bottom: 40px;
 			padding-right: 30px;
-			&:nth-child(3){
+			&:nth-child(3) {
 				display: none;
 				}
 
@@ -171,9 +177,6 @@
 				padding-right: 0;
 				}
 			}
-
-
-
 		}
 	}
 
@@ -191,12 +194,10 @@
 			&:last-child {
 				align-items: center;
 				}
-
-
-
 			}
 
-		&__phone, &__map {
+		&__phone,
+		&__map {
 			&-icon {
 				margin-right: 10px;
 				}

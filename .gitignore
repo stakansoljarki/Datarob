@@ -1,5 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 /build
+/dist
 /.idea
 /.cache
 /node_modules

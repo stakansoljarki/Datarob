@@ -1,14 +1,13 @@
 {
   "version": "1.0.0",
-  "main": "index.html",
   "license": "MIT",
+  "main": "index.html",
   "scripts": {
-    "start": "yarn cache clean && rm -rf dist && parcel src/pages/Home/Home.pug --port 3000 --open ",
-    "build:parcel": "parcel build src/pages/Home/Home.pug -d build --public-url ./ --out-file index.html",
     "build": "yarn cache clean && rm -rf build && yarn build:parcel",
+    "build:parcel": "parcel build src/pages/Home/Home.pug -d build --public-url ./ --out-file index.html",
     "csscomb": "csscomb src -c .csscomb.json",
-    "prettify-pug:fix": "yarn prettier --write src/**/*.pug",
-    "prettify:fix": "yarn prettier --write src/**/*.js"
+    "lint:fix": "prettier --write",
+    "start": "rm -rf dist && parcel src/pages/Home/Home.pug --port 3000 --open "
   },
   "husky": {
     "hooks": {
@@ -16,23 +15,18 @@
     }
   },
   "lint-staged": {
-    "*.scss": [
-      "csscomb --tty-mode --",
-      "git add "
+    "*.{css,scss}": [
+      "csscomb --tty-mode --"
     ],
-    "*.pug": [
-      "yarn prettify-pug:fix",
-      "git add "
+    "*.{js,pug}": [
+      "yarn lint:fix"
     ],
-    "*.js": [
-      "yarn prettify:fix",
-      "git add "
+    "package.json": [
+      "sort-package-json"
     ]
   },
   "dependencies": {
-    "@babel/preset-react": "^7.7.4",
     "autoprefixer": "^9.7.3",
-    "eslint-plugin-sort-keys-fix": "^1.1.0",
     "parsel": "^0.3.0",
     "postcss-modules": "^1.4.1",
     "scrollreveal": "^4.0.5",
@@ -40,15 +34,20 @@
     "tiny-slider": "^2.9.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.7",
-    "@prettier/plugin-pug": "^1.1.1",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@prettier/plugin-pug": "^1.2.0",
     "csscomb": "^4.3.0",
     "cssnano": "^4.1.10",
     "eslint": "^6.8.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.0",
     "husky": "^4.0.0",
     "lint-staged": "^9.5.0",
+    "parcel-bundler": "^1.12.4",
     "prettier": "^1.19.1",
     "pug": "^2.0.4",
-    "sass": "^1.24.0"
+    "sass": "^1.24.0",
+    "sort-package-json": "^1.40.0"
   }
 }

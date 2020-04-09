@@ -3,7 +3,7 @@ import { header } from "../../components/Header/Header";
 import { slider } from "./../../components/Contact-slider/Contact-slider";
 import SmoothScroll from "smooth-scroll";
 
-import "./Home.sass";
+import "./Home.scss";
 
 document.addEventListener(
   "DOMContentLoaded",

@@ -183,7 +183,11 @@
 			}
 		}
 	}
+.default .header__nav-list{
+	max-width: inherit;
 
+	transform: translateX(-50%);
+	}
 @media only screen and (max-width: $max-width-xs-device) {
 	.header {
 		&__nav {

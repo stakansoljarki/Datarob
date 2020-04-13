@@ -1,0 +1,12 @@
+@import "src/assets/styles/reset";
+@import "src/assets/styles/font";
+@import "src/assets/styles/variables";
+@import "src/assets/styles/button";
+@import "src/assets/styles/based";
+
+@import "../../components/Header/Header";
+@import "../../components/LeadGenerationBlog/LeadGenerationBlog";
+@import "../../components/Subscribe/Subscribe";
+@import "../../components/PostCard/PostCard";
+
+@import "../../components/Footer/Footer";

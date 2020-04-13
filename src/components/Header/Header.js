@@ -1,7 +1,6 @@
-export const header = () => {
-  const burger = document.querySelector(".header__burger"),
-    menu = document.querySelector(".header__nav-list");
-
+const header = () => {
+  const burger = document.querySelector(".header__burger");
+  const menu = document.querySelector(".header__nav-list");
   burger.addEventListener("click", () => {
     if (menu.classList.contains("header__nav-list--active")) {
       menu.classList.remove("header__nav-list--active");
@@ -10,3 +9,4 @@ export const header = () => {
     }
   });
 };
+export default header;

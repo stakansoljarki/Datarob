@@ -1,7 +1,7 @@
 import { tns } from "tiny-slider/src/tiny-slider";
 
-export const slider = () => {
-  let sliderClass = document.querySelector(".contact-slider__slides");
+const slider = () => {
+  const sliderClass = document.querySelector(".contact-slider__slides");
   if (sliderClass) {
     tns({
       SwipeAngle: "false",
@@ -16,7 +16,8 @@ export const slider = () => {
       mouseDrag: "true",
       navPosition: "bottom",
       speed: 600,
-      touch: "true"
+      touch: "true",
     });
   }
 };
+export default slider;

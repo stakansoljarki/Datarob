@@ -14,7 +14,8 @@
 
 		flex: 1 1 25%;
 
-		&:nth-child(1), &:nth-child(3) {
+		&:nth-child(1),
+		&:nth-child(3) {
 			&:before {
 				position: absolute;
 				top: 55px;
@@ -112,7 +113,8 @@
 
 			margin-bottom: 40px;
 
-			&:after, &:before {
+			&:after,
+			&:before {
 				content: none !important;
 				}
 			}

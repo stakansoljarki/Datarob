@@ -37,11 +37,15 @@
 			}
 		}
 
-	&__name, &__number, &__email, &__country {
+	&__name,
+	&__number,
+	&__email,
+	&__country {
 		width: calc(40% - 15px);
 		}
 
-	&__company, &__message {
+	&__company,
+	&__message {
 		width: 100%;
 		}
 
@@ -127,7 +131,10 @@
 
 @media only screen and (max-width: $max-width-xs-device) {
 	.form {
-		&__name, &__number, &__email, &__country {
+		&__name,
+		&__number,
+		&__email,
+		&__country {
 			width: 100%;
 			}
 		}

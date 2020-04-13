@@ -20,10 +20,7 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 
-		padding-top: 33px;
-		padding-right: 0;
-		padding-bottom: 33px;
-		padding-left: 0;
+		padding: 33px 0;
 		}
 
 	&__nav {
@@ -71,6 +68,7 @@
 
 				&:hover {
 					text-decoration: none;
+
 					&:before {
 						width: 100%;
 						}
@@ -90,13 +88,21 @@
 		}
 	}
 
+@media only screen and (max-width: $max-width-md-device) {
+	.header {
+		&__container {
+			padding-right: 15px;
+			padding-left: 15px;
+			}
+		}
+	}
+
 @media only screen and (max-width: $max-width-sm-device) {
 	.header {
 		position: fixed;
 		z-index: 999;
 
 		width: 100vw;
-		padding: 0 15px;
 
 		&__logo {
 			position: relative;
@@ -122,10 +128,13 @@
 		&__container {
 			position: relative;
 			z-index: 10;
+
+			padding: 33px 15px;
 			}
 
 		&__nav {
 			position: absolute;
+			left: 0;
 
 			width: 100%;
 
@@ -170,7 +179,7 @@
 				}
 
 			&-item {
-				margin: 0 auto 10px;
+				margin: 0 auto;
 
 				&:last-child {
 					margin: 0 auto 0;
@@ -182,12 +191,11 @@
 				}
 			}
 		}
+	.default .header__nav-list {
+		transform: translateX(-50%);
+		}
 	}
-.default .header__nav-list{
-	max-width: inherit;
 
-	transform: translateX(-50%);
-	}
 @media only screen and (max-width: $max-width-xs-device) {
 	.header {
 		&__nav {

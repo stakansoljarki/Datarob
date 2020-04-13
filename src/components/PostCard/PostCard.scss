@@ -1,0 +1,20 @@
+.blog {
+	&__box {
+		max-width: 1200px;
+		margin: 0 auto;
+		}
+	}
+
+.post-card {
+	&__reading-time {
+		text-transform: lowercase !important;
+
+		color: $primary-purple-color !important;
+
+		font: {
+			family: $primary-font;
+			weight: 500 !important;
+			size: 20px !important;
+			}
+		}
+	}

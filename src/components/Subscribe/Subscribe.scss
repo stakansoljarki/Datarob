@@ -1,5 +1,4 @@
 .subscribe {
-	margin-bottom: 50px;
 	padding: 50px 15px;
 
 	&__container {
@@ -30,13 +29,14 @@
 	&__title {
 		margin-bottom: 5px;
 
+		text-align: center;
 		text-transform: uppercase;
 
 		color: $primary-purple-color;
 
 		font: {
 			family: $primary-font;
-			size: 30px;
+			size: 40px;
 			weight: bold;
 			}
 		}
@@ -45,6 +45,7 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+
 		}
 
 	&__input {
@@ -116,6 +117,16 @@
 			align-items: center;
 			}
 
+		&__title{
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 0;
+
+			text-align: center;
+
+			font-size: 50px;
+			}
+
 		&__description {
 			width: 100%;
 			max-width: 455px;
@@ -125,10 +136,11 @@
 		&__form {
 			display: flex;
 			align-items: center;
-			flex-direction: column;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
 
 			width: 100%;
-			max-width: 430px;
 			}
 
 		&__box {
@@ -136,7 +148,7 @@
 			flex-direction: row;
 			justify-content: flex-start;
 
-			width: 100%;
+			width: 430px;
 			}
 
 		&__input {
@@ -160,8 +172,23 @@
 			margin-bottom: 0;
 			}
 
-		&__form {
-			align-items: flex-start;
+		&__title{
+			width: auto;
+			margin-right: 0;
+			}
+
+		&__form{
+			justify-content: space-between;
+			}
+		}
+	}
+@media only screen and (min-width: $max-width-md-device){
+	.subscribe {
+		&__title{
+			margin-right: 100px;
+			}
+		&__form{
+			justify-content: center;
 			}
 		}
 	}

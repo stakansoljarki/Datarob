@@ -10,6 +10,7 @@ document.addEventListener(
   () => {
     const scroll = SmoothScroll('a[href*="#"]');
     scroll();
+
     header();
     slider();
   },

@@ -1,13 +1,19 @@
 .leadGenerationBlog {
-	padding: 100px 0;
+	padding: 100px 0 0;
+
 	&__container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		}
+
 	&__box {
 		width: 100%;
+		&-image{
+			height: 400px;
+			}
 		}
+
 	&__title {
 		position: relative;
 
@@ -21,6 +27,7 @@
 			weight: 600;
 			};
 		line-height: 1;
+
 		&:after {
 			position: absolute;
 			bottom: -30px;
@@ -34,6 +41,7 @@
 			background-color: $primary-purple-color;
 			}
 		}
+
 	&__description {
 		width: 100%;
 		max-width: 510px;
@@ -55,6 +63,7 @@
 				size: 55px;
 				}
 			}
+
 		&__box {
 			display: flex;
 			align-items: center;
@@ -63,25 +72,44 @@
 
 			width: 50%;
 			margin-bottom: 20px;
+
 			}
+
 		&__img {
 			width: 100%;
 			}
 		}
 	}
 
-@media only screen and (min-width: $max-width-sm-device) {
+@media only screen and (min-width: $max-width-md-device) {
 	.leadGenerationBlog {
 		&__description {
 			width: 100%;
 			}
+
 		&__box {
 			align-items: flex-start;
 			}
 		}
 	}
-@media only screen and (min-width: $max-width-sm-device) {
+
+@media only screen and (min-width: $max-width-l-device) {
 	.leadGenerationBlog {
-		padding: 50px 0;
+		padding: 50px 0 0;
+
+		&__box {
+			&-description {
+				width: 50%;
+				}
+
+			&-image {
+				position: absolute;
+				top: 30px;
+				right: -125px;
+
+				width: 70%;
+				height: 100%;
+				}
+			}
 		}
 	}

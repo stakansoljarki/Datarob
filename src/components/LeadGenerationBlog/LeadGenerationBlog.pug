@@ -1,17 +1,24 @@
 section.leadGenerationBlog
   .leadGenerationBlog__container.container
-    .leadGenerationBlog__box
+    .leadGenerationBlog__box.leadGenerationBlog__box-description
       - let title = 'Lead Generation Blog';
       h1.leadGenerationBlog__title= title
       -
         let descriptionList = [
             "This digital marketing blog is a practical advisor for forward-thinking leaders looking to build powerful lead generation strategies.\n",
-            "We feature weekly updates on the lead generation business, local lead generation, digital marketing (both inbound and outbound), reviews of lead generation tools and software."
+            "We feature weekly updates on the lead generation business, local lead generation, digital marketing (both inbound and outbound), reviews of lead generation tools and software.",
+            "From time to time we will post insights on free lead generation tools, our tested hacks, and email templates that worked for us."
         ]
       each descriptionItem in descriptionList
         .leadGenerationBlog__description= descriptionItem
-    .leadGenerationBlog__box
-      svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 567.07 373.9")
+    .leadGenerationBlog__box.leadGenerationBlog__box-image
+      svg(
+        xmlns="http://www.w3.org/2000/svg",
+        max-width="730px",
+        max-height="480px",
+        width="100%",
+        height="100%"
+      )
         defs
           style.
             .cls-1, .cls-6 {

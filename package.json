@@ -4,11 +4,10 @@
   "main": "index.html",
   "scripts": {
     "build": "yarn cache clean && rm -rf build && yarn build:parcel",
-    "build:parcel": "parcel build src/pages/Home/Home.pug -d build --public-url ./ --out-file index.html",
+    "build:parcel": "parcel build src/pages/Home.pug -d build --public-url ./ --out-file index.html",
     "csscomb": "csscomb src -c .csscomb.json",
-    "lint": "eslint --fix",
     "lint:fix": "prettier --write",
-    "start": "rm -rf dist && parcel src/pages/Home/Home.pug --port 3000 --open "
+    "start": "rm -rf dist && parcel src/pages/Home.pug --port 3000 --open "
   },
   "husky": {
     "hooks": {

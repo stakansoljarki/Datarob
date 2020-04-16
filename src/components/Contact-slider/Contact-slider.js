@@ -1,6 +1,6 @@
 import { tns } from "tiny-slider/src/tiny-slider";
 
-const slider = () => {
+export const slider = () => {
   const sliderClass = document.querySelector(".contact-slider__slides");
   if (sliderClass) {
     tns({
@@ -20,4 +20,3 @@ const slider = () => {
     });
   }
 };
-export default slider;

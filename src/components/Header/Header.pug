@@ -1,11 +1,11 @@
 header.header
   .header__container.container
     a.header__logo-link(href="/")
-      - let logo = './../../components/Header/images/logo.svg';
+      - let logo = './../components/Header/images/logo.svg';
         img.header__logo(src=logo, alt="datarob-logo")
     .footer__burger-box
       img.header__burger(
-        src="./../../components/Header/images/bars-solid.svg",
+        src="./../components/Header/images/bars-solid.svg",
         alt="burger"
       )
     nav.header__nav
@@ -19,7 +19,7 @@ header.header
               },
               {
                   title: 'Blog',
-                  link: '../../pages/Blog/Blog.pug'
+                  link: 'https://datarob.com/blog/'
               },
               {
                   title: 'FAQ',

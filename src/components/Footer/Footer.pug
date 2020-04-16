@@ -2,15 +2,15 @@ footer.footer
   .footer__container.container
     .footer__wrapper
       img.footer__logo(
-        src="./../../components/Footer/images/logo.svg",
+        src="./../components/Footer/images/logo.svg",
         alt="Datarob-logo"
       )
       .footer__phone-wrapper
-        - let phoneIcon = './../../components/Footer/images/phone.svg';
+        - let phoneIcon = './../components/Footer/images/phone.svg';
           img.footer__phone-icon(src=phoneIcon, alt="Phone-icon")
         a.footer__phone-link(href="tel:+380523249548") +380523249548
       .footer__map-wrapper
-        - let mapIcon = './../../components/Footer/images/map-marker-alt-solid.svg';
+        - let mapIcon = './../components/Footer/images/map-marker-alt-solid.svg';
           img.footer__map-icon(src=mapIcon, alt="Map-icon")
         .footer__map-box
           a.footer__map-link Kyiv, Ivana Fedorova street 44
@@ -43,28 +43,28 @@ footer.footer
         each secondContent in secondWrapperContent
           li.footer__item
             a.footer__item-link(href=secondContent.link, target="_blank") #{secondContent.title}
-    .footer__wrapper
+    //.footer__wrapper
     .footer__wrapper
       .footer__icon-box
         -
           let footerSocialIcon = [
               {
-                  imgPath: './../../components/Footer/images/facebook.svg',
+                  imgPath: './../components/Footer/images/facebook.svg',
                   alt: 'facebook',
                   link: '#!'
               },
               {
-                  imgPath: './../../components/Footer/images/twitter.svg',
+                  imgPath: './../components/Footer/images/twitter.svg',
                   alt: 'twitter',
                   link: '#!'
               },
               {
-                  imgPath: './../../components/Footer/images/linkedin.svg',
+                  imgPath: './../components/Footer/images/linkedin.svg',
                   alt: 'linkedin',
                   link: '#!'
               },
               {
-                  imgPath: './../../components/Footer/images/instagram.svg',
+                  imgPath: './../components/Footer/images/instagram.svg',
                   alt: 'instagram',
                   link: '#!'
               }

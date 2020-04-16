@@ -8,17 +8,19 @@ section.next
       .next__free-box.next__animals
         - let freeTitle = 'FREE LEADS\n';
         - let freeDescription = 'Datarob team manually finds and researches 50-200 premium sales leads. If interested, fill out the form.';
-        - let freeSVG = './../../components/Next/images/turtle.svg';
+        - let freeSVG = './../components/Next/images/turtle.svg';
           .next__animals-title #{freeTitle}
           .next__animals-description #{freeDescription}
           .next__cube
+          .next__cube--hide
           img.next__animals-svg(src=freeSVG, alt="turtle")
 
       .next__start-width.next__animals
         - let startTitle = 'START FROM $2K MONTHLY';
         - let startDescription = 'Monthly package includes: lead research for 1000 contacts, comprehensive website and outreach audit, including outbound sales operation. After the intro call, we develop a unique Client engagement strategy.';
-        - let startSVG = './../../components/Next/images/cat.svg';
+        - let startSVG = './../components/Next/images/cat.svg';
           .next__animals-title #{startTitle}
           .next__animals-description #{startDescription}
           .next__cube
+          .next__cube--hide
           img.next__animals-svg(src=startSVG, alt="cat")

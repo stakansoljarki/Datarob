@@ -5,16 +5,32 @@
 		}
 	}
 
-.post-card {
-	&__reading-time {
-		text-transform: lowercase !important;
+.post {
+	&-feed {
+		padding: 40px 15px 0;
+		}
 
-		color: $primary-purple-color !important;
+	&-card {
+		&-excerpt {
+			font-size: 16pt;
+			line-height: 24pt;
+			}
 
-		font: {
-			family: $primary-font;
-			weight: 500 !important;
-			size: 20px !important;
+		&__reading-time {
+			text-transform: lowercase !important;
+
+			color: $primary-purple-color !important;
+
+			font: {
+				family: $primary-font;
+				weight: 500 !important;
+				size: 20px !important;
+				}
 			}
 		}
+
+	&-title {
+		font-size: 18pt;
+		}
+
 	}

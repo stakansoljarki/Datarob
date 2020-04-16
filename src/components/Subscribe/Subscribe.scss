@@ -57,6 +57,7 @@
 		color: $primary-purple-color;
 		border: 3px solid $primary-purple-color;
 		border-radius: 10px 10px 0 0;
+		background-color: #f6f6fd;
 
 		font: {
 			family: $primary-font;
@@ -100,7 +101,7 @@
 		font: {
 			family: $primary-font;
 			size: 16px;
-			weight: 400;
+			weight: 600;
 			}
 
 		&:focus {
@@ -115,6 +116,8 @@
 	.subscribe {
 		&__container {
 			align-items: center;
+
+			padding: 34px 0;
 			}
 
 		&__title{
@@ -124,7 +127,7 @@
 
 			text-align: center;
 
-			font-size: 50px;
+			font-size: 35pt;
 			}
 
 		&__description {
@@ -182,7 +185,7 @@
 			}
 		}
 	}
-@media only screen and (min-width: $max-width-md-device){
+@media only screen and (min-width: $max-width-l-device){
 	.subscribe {
 		&__title{
 			margin-right: 100px;

@@ -3,15 +3,23 @@
 		max-width: 1200px;
 		margin: 0 auto;
 		}
+
+
+	}
+
+.default {
+	& .leadGenerationBlog__container {
+		padding: 0;
+		}
 	}
 
 .post {
 	&-feed {
-		padding: 40px 15px 0;
+		padding: 40px 15px 0 !important;
 		}
 
 	&-card {
-		&-excerpt {
+		&-excerpt p {
 			font-size: 16pt;
 			line-height: 24pt;
 			}
@@ -26,6 +34,11 @@
 				weight: 500 !important;
 				size: 20px !important;
 				}
+			}
+
+		&-title {
+			font-size: 18pt !important;
+
 			}
 		}
 

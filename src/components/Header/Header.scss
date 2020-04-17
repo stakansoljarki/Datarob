@@ -89,15 +89,14 @@
 			}
 		}
 	}
-
-@media only screen and (max-width: $max-width-md-device) {
-	.header {
+@media only screen and (max-width: $max-width-l-device){
+	.header{
 		&__container {
-			padding-right: 15px;
-			padding-left: 15px;
+			padding: 33px 15px;
 			}
 		}
 	}
+
 
 @media only screen and (max-width: $max-width-sm-device) {
 	.header {

@@ -1,0 +1,52 @@
+include ./images/icons
+section.contact-lead
+  .contact-lead__container.container
+    .contact-lead__block
+      - let contactTitle = 'Contact Lead Generation Team';
+      - let contactSubtitle = 'Please contact Datarob team in most comfortable way:';
+        .contact-lead__title= contactTitle
+        .contact-lead__subtitle= contactSubtitle
+      a.contact-lead__link.contact-lead__link--font-size-bigger(
+        href="mailto:hello@datarob.com"
+      )
+        +email-icon
+        span E-mail:
+        | hello@datarob.com
+      .contact-lead__link-block
+        a.contact-lead__link(href="#")
+          +chat-icon
+          span Chatbot:
+          | Follow the cat
+        a.contact-lead__link.contact-lead__link--padding-smaller(
+          href="tel:+380503371100"
+        )
+          +phone-icon
+          span Telegram, Whatsapp, Viber:
+          | +38050 337 1100
+      form.contact-lead__form
+        fieldset
+          legend.contact-lead__form-title Or we’ll contact you:
+          input.contact-lead__form-input(placeholder="Full name", required)
+          input.contact-lead__form-input(
+            placeholder="E-mail",
+            type="email",
+            required
+          )
+          textarea.contact-lead__form-input(placeholder="Message")
+          button.contact-lead__form-btn
+            +form-btn
+
+    .contact-lead__slider-wrapper
+      .contact-lead__slider-inner
+        -
+          let contactSliderList = [
+            '../components/ContactLead/images/slider-image.jpg',
+            '../components/ContactLead/images/slider-image.jpg',
+            '../components/ContactLead/images/slider-image.jpg'
+          ]
+        each contactSliderItem in contactSliderList
+          .contact-lead__slider-item
+            img(src=contactSliderItem)
+  a.contact-lead__scroll-down-link(href="#sales_story")
+    +arrow
+    | Scroll down

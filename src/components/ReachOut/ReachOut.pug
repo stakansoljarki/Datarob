@@ -1,0 +1,45 @@
+section.reach-out
+  .container
+    .title.reach-out__title Reach out for B2B leads
+    .reach-out__subtitle
+      | Dear Founder, Salesperson, Marketer or Cats lover! Kindly fill out the contact form below. A Datarober will contact you within 24 hours or less. We guarantee that all the information provided by the Customer is kept private and we are ready to sign an NDA before the intro call. Let’s boost your sales story!
+    form#contact-form.form.reach-out__form(
+      action="https://formspree.io/mzbgvaog",
+      method="post",
+      enctype="multipart/form-data"
+    )
+      input#formName.form__input.form__name(
+        placeholder="Full name",
+        name="Full-name"
+      )
+      label(for="formName") Full name
+      input#formNumber.form__input.form__number(
+        type="tel",
+        required,
+        placeholder="Phone number",
+        name="Number"
+      )
+      label(for="formNumber") Phone number
+      input#formEmail.form__input.form__email(
+        type="email",
+        required,
+        placeholder="E-mail",
+        name="E-mail"
+      )
+      label(for="formEmail") E-mail
+      input#formCountry.form__input.form__country(
+        placeholder="Country",
+        name="Country"
+      )
+      label(for="formCountry") Country
+      input#formCompany.form__input.form__company(
+        placeholder="Company",
+        name="Company"
+      )
+      label(for="formCompany") Company
+      textarea#formTextarea.form__input.form__textarea.form__message(
+        placeholder="Message",
+        name="Textarea"
+      )
+      label(for="formTextarea") Message
+      input.form__submit.button(type="submit", value="SEND MESSAGE")

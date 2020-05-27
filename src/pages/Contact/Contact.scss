@@ -1,0 +1,12 @@
+@import "src/assets/styles/reset";
+@import "src/assets/styles/font";
+@import "src/assets/styles/variables";
+@import "src/assets/styles/button";
+@import "src/assets/styles/based";
+
+@import "../../components/Header/Header";
+@import "../../components/ContactLead/ContactLead";
+@import "../../components/SalesStory/SalesStory";
+@import "../../components/ReachOut/ReachOut";
+
+@import "../../components/Footer/Footer";

@@ -1,0 +1,30 @@
+section#sales_story.sales-story
+  .sales-story__container.container
+    - let salesStoryTitle = 'True B2B Sales Story';
+      h2.sales-story__title.title= salesStoryTitle
+    .sales-story__wrapper
+      -
+        let salesStoryList = [
+          {
+            src: '../components/SalesStory/images/image-1.svg',
+            number: '01',
+            text: 'Once there lived a SuperCat who dreamt of becoming the best salesperson in the world. He saw himself an ideal partner and advisor but couldn’t find the Client. Years went by.'
+          },
+          {
+            src: '../components/SalesStory/images/image-2.svg',
+            number: '02',
+            text: 'For days on end, SuperCat was sending out messages on LinkedIn, all in vain. Then, one night, our hero sat at the computer and suddenly a browser blinked as he received a very customized message. It was a proposal to obtain 200 premium client leads. He was intrigued and agreed to jump on call.'
+          },
+          {
+            src: '../components/SalesStory/images/image-3.svg',
+            number: '03',
+            text: 'Believe it or not, SuperCat got three clients over the next few weeks. Now he runs Marketing and Outreach Teams and wonders if he should teach his own Sales course, but there’s simply no time for that. He needs to sell, sell, and sell.'
+          }
+        ]
+      each salesStoryItem in salesStoryList
+        .sales-story__block
+          .sales-story__image
+            img(src=salesStoryItem.src)
+          .sales-story__sidebar
+            .sales-story__number= salesStoryItem.number
+            .sales-story__text= salesStoryItem.text

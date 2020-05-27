@@ -1,0 +1,302 @@
+@import "~tiny-slider/src/tiny-slider";
+@keyframes arrowDown {
+	0%{
+		bottom: -3px;
+		}
+	50%{
+		bottom: -9px;
+		}
+	100%{
+		bottom: -3px;
+		}
+	}
+.contact-lead{
+	padding-top: 60px;
+	& * {
+		box-sizing: border-box;
+
+		font-size: 100%;
+		}
+	&__container{
+		display: flex;
+		justify-content: space-between;
+
+		box-sizing: content-box;
+		margin-bottom: 59px;
+		}
+	&__block{
+		flex: 1 1 51.28%;
+
+		padding-right: 100px;
+
+		}
+	&__title{
+		margin-bottom: 32px;
+
+		color: $primary-purple-color;
+
+		font-size: 34pt;
+		font-weight: 600;
+		line-height: 1.18;
+		}
+	&__subtitle{
+		margin-bottom: 27px;
+
+		color: $primary-gray-color;
+
+		font-size: 18pt;
+		line-height: 1.33;
+
+		}
+	&__link-block{
+		display: flex;
+
+		margin-bottom: 20px;
+		& > :first-child{
+			margin-right: 68px;
+			}
+		}
+	&__link{
+		position: relative;
+
+		display: inline-flex;
+		flex-direction: column;
+		justify-content: center;
+
+		padding-left: 69px;
+
+		text-decoration: none;
+
+		color: #606060;
+
+		font-size: 15pt;
+		font-weight: 600;
+
+		svg{
+			position: absolute;
+			top: 50%;
+			left: 0;
+
+			transform: translateY(-50%);
+			}
+
+		span{
+			display: block;
+
+			color: $primary-purple-color;
+
+			font-weight: 700;
+			}
+
+		&--font-size-bigger{
+			flex-direction: row;
+
+			margin-bottom: 25px;
+
+			font-size: 17pt;
+			font-weight: 700;
+			line-height: 1.78;
+			span{
+				display: inline-block;
+
+				margin-right: 5px;
+				}
+			}
+		&--padding-smaller{
+			max-width: 210px;
+			padding-left: 43px;
+			}
+
+		}
+	&__form{
+		width: 100%;
+		}
+	&__form-input{
+		box-sizing: border-box;
+		width: 100%;
+		margin-bottom: 16px;
+		padding: 8px 22px;
+
+		color: $primary-black-color;
+		border: 3px solid rgba(137, 137, 233, 0.5);
+		border-radius: 10px;
+
+		font: {
+			size: 16pt;
+			weight: 400;
+			}
+		&[placeholder="Message"]{
+			min-height: 80px;
+
+			resize: none;
+			}
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 15px #0462ff;
+			}
+
+		&::placeholder {
+			letter-spacing: 0.18px;
+
+			color: rgba(45, 45, 45, 0.5);
+
+			font: {
+				size: 14pt;
+				weight: 300;
+				}
+			}
+		}
+	&__form-title{
+		margin-bottom: 25px;
+
+		color: $primary-gray-color;
+
+		font-size: 18pt;
+		line-height: 1.33;
+		}
+	&__form-btn{
+		width: 171px;
+		height: 53px;
+
+		cursor: pointer;
+
+		border-radius: 10px;
+		background-color: $primary-purple-color;
+		}
+	&__slider-item {
+		overflow: hidden;
+
+		height: 100%;
+
+		border-radius: 10px;
+		img{
+			display: block;
+
+			width: 100%;
+			height: 100%;
+
+			object-fit: cover;
+			}
+
+		}
+
+	&__slider-inner{
+		width: 100%;
+		height: calc(100% - 41px);
+		}
+	&__slider-wrapper{
+		flex: 1 1 48.72%;
+
+		}
+	&__scroll-down-link{
+		position: relative;
+
+		display: block;
+
+		max-width: max-content;
+		margin: 0 auto 20px;
+
+		text-align: center;
+		letter-spacing: 0.18px;
+
+		opacity: 0.36;
+		color: #2d2d2d5c;
+
+		font-size: 14pt;
+		svg{
+			position: absolute;
+			left: 50%;
+
+			transform: translateX(-50%);
+			animation: arrowDown 1.2s linear infinite;
+			}
+		}
+	}
+
+
+
+.tns {
+	&-outer{
+		height: 100%;
+		}
+	&-ovh{
+		height: 100%;
+		}
+	&-inner{
+		height: 100%;
+		}
+	&-nav {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		& > button {
+			width: 12px;
+			height: 12px;
+			margin: 0 15px;
+
+			border: 2px solid $primary-purple-color;
+			border-radius: 50%;
+
+			&.tns-nav-active {
+				width: 11px;
+				height: 11px;
+				margin: 0 15px;
+
+				border: 2px solid $primary-purple-color;
+				border-radius: 50%;
+				background-color: $primary-purple-color;
+				}
+			}
+		}
+
+	&-slider {
+		transition: all 0.4s ease-in-out;
+
+		-ms-touch-action: pan-y;
+		touch-action: pan-y;
+		}
+	}
+
+
+@media (max-width: 992px){
+	.contact-lead{
+		&__container{
+			flex-direction: column;
+			}
+		&__block{
+			margin-bottom: 50px;
+			padding-right: 0;
+			}
+		&__slider-inner{
+			height: 100%;
+			}
+		&__link--font-size-bigger{
+			flex-direction: column;
+			}
+		&__link-block{
+			flex-direction: column;
+			& > :first-child{
+				margin-right: 0;
+				margin-bottom: 30px;
+				}
+			}
+		&__link--padding-smaller{
+			max-width: none;
+			padding-left: 69px;
+			}
+		}
+	.tns {
+		&-nav{
+			bottom: -20px;
+			left: 50%;
+
+			transform: translateX(-50%);
+			}
+		}
+
+	}

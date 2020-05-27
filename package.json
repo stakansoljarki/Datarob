@@ -51,6 +51,6 @@
     "pug": "^2.0.2",
     "sass": "^1.26.5",
     "scrollreveal": "^4.0.5",
-    "sort-package-json": "^1.42.2"
+    "sort-package-json": "^1.42.3"
   }
 }

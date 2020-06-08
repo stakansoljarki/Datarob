@@ -1,10 +1,10 @@
 include ./images/icons
 section.contact-lead
   .contact-lead__container.container
+    - let contactTitle = 'Contact Lead Generation Team';
+      .contact-lead__title= contactTitle
     .contact-lead__block
-      - let contactTitle = 'Contact Lead Generation Team';
       - let contactSubtitle = 'Please contact Datarob team in most comfortable way:';
-        .contact-lead__title= contactTitle
         .contact-lead__subtitle= contactSubtitle
       a.contact-lead__link.contact-lead__link--font-size-bigger(
         href="mailto:hello@datarob.com"
@@ -38,15 +38,14 @@ section.contact-lead
 
     .contact-lead__slider-wrapper
       .contact-lead__slider-inner
-        -
-          let contactSliderList = [
-            '../components/ContactLead/images/slider-image.jpg',
-            '../components/ContactLead/images/slider-image.jpg',
-            '../components/ContactLead/images/slider-image.jpg'
-          ]
-        each contactSliderItem in contactSliderList
-          .contact-lead__slider-item
-            img(src=contactSliderItem)
+        .contact-lead__slider-item.contact-lead__slider-map
+          iframe(
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.76645582516!2d30.503878654076683!3d50.42682278177003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cee056be5537%3A0x62b8d6974dbc1839!2z0LLRg9C70LjRhtGPINCG0LLQsNC90LAg0KTQtdC00L7RgNC-0LLQsCwgNDQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1591546699597!5m2!1sru!2sua"
+          )
+        .contact-lead__slider-item
+          img(src="../components/ContactLead/images/slider-image.jpg")
+        .contact-lead__slider-item
+          img(src="../components/ContactLead/images/officeview.jpg")
   a.contact-lead__scroll-down-link(href="#sales_story")
     +arrow
     | Scroll down

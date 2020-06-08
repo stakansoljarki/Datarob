@@ -42,9 +42,11 @@
 			list-style: none;
 
 			line-height: 1.5;
-			&:last-child{
+
+			&:last-child {
 				margin-right: 0;
 				}
+
 			& > a {
 				position: relative;
 
@@ -89,8 +91,38 @@
 			}
 		}
 	}
-@media only screen and (max-width: $max-width-l-device){
-	.header{
+
+
+.contact .header {
+	&__nav {
+		&-item {
+			&:last-child {
+				& > a {
+					&:before {
+						width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+.blog .header {
+	&__nav {
+		&-item {
+			&:nth-last-child(3) {
+				& > a {
+					&:before {
+						width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+@media only screen and (max-width: $max-width-l-device) {
+	.header {
 		&__container {
 			padding: 33px 15px;
 			}

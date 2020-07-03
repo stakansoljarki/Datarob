@@ -34,7 +34,7 @@
     "tiny-slider": "^2.9.2"
   },
   "devDependencies": {
-    "@babel/parser": "^7.10.3",
+    "@babel/parser": "^7.10.4",
     "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",

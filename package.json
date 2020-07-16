@@ -50,7 +50,7 @@
     "prettier": "^2.0.5",
     "pug": "^3.0.0",
     "sass": "^1.26.10",
-    "scrollreveal": "^4.0.5",
+    "scrollreveal": "^4.0.7",
     "sort-package-json": "^1.44.0"
   }
 }

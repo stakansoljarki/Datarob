@@ -23,16 +23,28 @@ section.contact-lead
           +phone-icon
           span Telegram, Whatsapp, Viber:
           | +38050 337 1100
-      form.contact-lead__form
+      form.contact-lead__form(
+        action="https://formspree.io/xrgyojvq",
+        method="post",
+        enctype="multipart/form-data"
+      )
         fieldset
           legend.contact-lead__form-title Or we’ll contact you:
-          input.contact-lead__form-input(placeholder="Full name", required)
+          input.contact-lead__form-input(
+            placeholder="Full name",
+            name="name",
+            required
+          )
           input.contact-lead__form-input(
             placeholder="E-mail",
+            name="E-mail",
             type="email",
             required
           )
-          textarea.contact-lead__form-input(placeholder="Message")
+          textarea.contact-lead__form-input(
+            placeholder="Message",
+            name="Textarea"
+          )
           button.contact-lead__form-btn
             +form-btn
 

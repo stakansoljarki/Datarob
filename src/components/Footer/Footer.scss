@@ -1,4 +1,6 @@
 .footer {
+	$this: &;
+
 	position: relative;
 
 	padding: 60px 0;
@@ -107,11 +109,16 @@
 
 	&__icon {
 		&-box {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
+			#{$this} {
+				&__noindex {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
 
-			max-width: 150px;
+					max-width: 150px;
+					}
+				}
+
 			}
 
 		&-link {
@@ -158,6 +165,7 @@
 				}
 			}
 		}
+
 	&__mail {
 		font-size: 24px;
 		}

@@ -1,0 +1,26 @@
+.lead-card
+  .lead-card__about-block
+    img.lead-card__img(src=leadCardItem.img)
+    .lead-card__wrap
+      img.lead-card__logo(src=leadCardItem.logo)
+      h3.lead-card__title= leadCardItem.title
+      p.lead-card__description= leadCardItem.description
+    img.lead-card__vector(src="./../components/Lead-cases/images/Vector.svg")
+  .lead-card__info
+    .lead-card__data
+      each leadCardData in leadCardItem.leadCardData
+        .lead-card__data-box
+          .lead-card__inner
+            h4.lead-card__data-title= leadCardData.dataTitle
+            p.lead-card__data-description= leadCardData.dataDescription
+          .lead-card__inner
+            h4.lead-card__data-title= leadCardData.dataTitleSecond
+            p.lead-card__data-description= leadCardData.dataDescriptionSecond
+    .lead-card__achievements
+      h4.lead-card__achievements-title= leadCardItem.achievementsTitle
+      each leadCardAchievements in leadCardItem.leadCardAchievements
+        .lead-card__achievements-box
+          img.lead-card__achievements-logo(
+            src="./../components/Lead-cases/images/checkbox-logo.svg"
+          )
+          p.lead-card__achievements-description= leadCardAchievements.description

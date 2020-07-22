@@ -1,0 +1,105 @@
+section.roadmap
+  .roadmap__container.container
+    - let roadmapTitle = 'Client Engagement Roadmap';
+      h2.title #{roadmapTitle}
+    .roadmap__wrap
+      -
+        var clientCardList = [
+            {
+                title: 'Before contract',
+                logo: 'A',
+                clientImg: [
+                    {
+                        img: './../components/Roadmap/images/Star.svg'
+                    }
+                ],
+                clientCard: [
+                    {
+                        item: 'Consultation with fast audit for delivery, SEO and website'
+                    },
+                    {
+                        item: 'Free leads, questionaries'
+                    }
+                ]
+            },
+            {
+                title: '1st Day',
+                logo: 'I',
+                clientImg: [
+                    {
+                        img: './../components/Roadmap/images/Star.svg'
+                    },
+                    {
+                        img: './../components/Roadmap/images/Star.svg'
+                    }
+                ],
+                clientCard: [
+                    {
+                        item: 'Personal Customer Success Manager'
+                    },
+                    {
+                        item: 'Kick-off meeting'
+                    },
+                    {
+                        item: 'Engagement strategy based on SCRUM'
+                    }
+                ]
+            },
+            {
+                title: 'Two weeks',
+                logo: 'D',
+                clientImg: [
+                    {
+                        img: './../components/Roadmap/images/Star.svg'
+                    },
+                    {
+                        img: './../components/Roadmap/images/Star.svg'
+                    },
+                    {
+                        img: './../components/Roadmap/images/Star.svg'
+                    }
+                ],
+                clientCard: [
+                    {
+                        item: 'Fixing open and response rates'
+                    },
+                    {
+                        item: 'Outreach templates and updated ICP'
+                    },
+                    {
+                        item: 'In-depth audit for email delivery, outreach, website'
+                    }
+                ]
+            },
+            {
+                title: 'One month',
+                logo: 'A',
+                clientImg: [
+                    {
+                        img: './../components/Roadmap/images/Star.svg'
+                    },
+                    {
+                        img: './../components/Roadmap/images/Star.svg'
+                    },
+                    {
+                        img: './../components/Roadmap/images/Star.svg'
+                    },
+                    {
+                        img: './../components/Roadmap/images/Star.svg'
+                    }
+                ],
+                clientCard: [
+                    {
+                        item: 'Email and LinkedIn outreach factory is up and running'
+                    },
+                    {
+                        item: '5-15 interesting leads monthly'
+                    },
+                    {
+                        item: 'Integration with the Client sales process'
+                    }
+                ]
+            }
+        ]
+      each clientCardItem in clientCardList
+        include ./Client-card

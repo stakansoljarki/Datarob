@@ -1,0 +1,115 @@
+section.lead-cases
+  .lead-cases__container.container
+    - let leadCasesTitle = 'Lead Generation Case Studies';
+      h2.lead-cases__title #{leadCasesTitle}
+    -
+      var leadCardList = [
+          {
+              img: './../components/Lead-cases/images/infura.png',
+              logo: './../components/Lead-cases/images/infura-logo.svg',
+              title: 'Infura',
+              description: '“Datarob has helped Infura with the sales strategy tremendously. From providing quality leads to very helpful insights that we used to train our team on for smart outreach. I was most impressed that they put in the effort to deeply understand our customers and blockchain environment. I will definitely be working with Datarob again...”',
+              achievementsTitle: 'Achievements:',
+              leadCardData: [
+                  {
+                      dataTitle: 'Industry',
+                      dataDescription: 'IT software, blockchain',
+                      dataTitleSecond: 'Hq',
+                      dataDescriptionSecond: 'Global'
+                  },
+                  {
+                      dataTitle: 'Solution',
+                      dataDescription: 'Partners database',
+                      dataTitleSecond: 'Type',
+                      dataDescriptionSecond: 'Dedicated team'
+                  }
+              ],
+              leadCardAchievements: [
+                  {
+                      description: 'Developing a full outreach circle and ICP database'
+                  },
+                  {
+                      description: 'Deep involvement in content and message driving'
+                  },
+                  {
+                      description: '100% mail delivery and a high response rate'
+                  },
+                  {
+                      description: 'Tremendous improvement of business processes'
+                  }
+              ]
+          },
+          {
+              img: './../components/Lead-cases/images/geozilla.png',
+              logo: './../components/Lead-cases/images/geozilla-logo.svg',
+              title: 'Geozilla',
+              description: '“Datarob has executed a successful strategy to increase leads, which has facilitated business growth and improved revenue. The team has been reliable and directed the collaboration effectively.”',
+              achievementsTitle: 'Achievements:',
+              leadCardData: [
+                  {
+                      dataTitle: 'Industry',
+                      dataDescription: 'IT software, GEO',
+                      dataTitleSecond: 'Hq',
+                      dataDescriptionSecond: 'SF, USA'
+                  },
+                  {
+                      dataTitle: 'Solution',
+                      dataDescription: 'B2B Leadgen',
+                      dataTitleSecond: 'Type',
+                      dataDescriptionSecond: 'Leadgen-aaS'
+                  }
+              ],
+              leadCardAchievements: [
+                  {
+                      description: 'Building a global sales team'
+                  },
+                  {
+                      description: '24/7 services'
+                  },
+                  {
+                      description: '+120% revenue for supported Sales'
+                  },
+                  {
+                      description: '-83% cost per B2B lead'
+                  }
+              ]
+          },
+          {
+              img: './../components/Lead-cases/images/provider.png',
+              logo: './../components/Lead-cases/images/provider-logo.svg',
+              title: 'IT Services Provider',
+              description: '“We engaged with the Datarob team to develop our outbound and saw significant growth in our pipeline. With lead research, our average deal size grew twice bigger than with inbound”',
+              achievementsTitle: 'Achievements:',
+              leadCardData: [
+                  {
+                      dataTitle: 'Industry',
+                      dataDescription: 'IT outstaffing/outsourcing',
+                      dataTitleSecond: 'Hq',
+                      dataDescriptionSecond: 'London, UK'
+                  },
+                  {
+                      dataTitle: 'Solution',
+                      dataDescription: 'B2B Sales',
+                      dataTitleSecond: 'Type',
+                      dataDescriptionSecond: 'Dedicated team'
+                  }
+              ],
+              leadCardAchievements: [
+                  {
+                      description: 'Custom sales process'
+                  },
+                  {
+                      description: '+300% annual growth'
+                  },
+                  {
+                      description: 'Integration with CRM'
+                  },
+                  {
+                      description: 'New Top Clients from Fortune 500'
+                  }
+              ]
+          }
+      ]
+
+    each leadCardItem in leadCardList
+      include ./Lead-card

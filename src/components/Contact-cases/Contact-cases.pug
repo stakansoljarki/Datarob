@@ -1,0 +1,10 @@
+section.contact-cases
+  .contact-cases__container.container
+    - let contactCasesTitle = 'Contact Us';
+      h2.contact-cases__title.title #{contactCasesTitle}
+    .contact-cases__wrap
+      include ./../Form/Form
+      .contact-cases__inner
+        img.contact-cases__img(
+          src="./../components/Contact-cases/images/cat.png"
+        )

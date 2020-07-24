@@ -1,0 +1,10 @@
+.client-card
+  span.client-card__logo= clientCardItem.logo
+  .client-card__inner
+    h3.client-card__title= clientCardItem.title
+    .client-card__img-box
+      each clientImg in clientCardItem.clientImg
+        img.client-card__img(src=clientImg.img)
+  .client-card__wrap
+    each clientCard in clientCardItem.clientCard
+      p.client-card__item= clientCard.item

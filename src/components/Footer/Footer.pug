@@ -8,8 +8,12 @@ footer.footer
       .footer__phone-wrapper
         - let phoneIcon = './../components/Footer/images/phone.svg';
           img.footer__phone-icon(src=phoneIcon, alt="Phone-icon")
-        a.footer__phone-link(href="tel:+380503371100") +380503371100
-          .footer__map-wrapper
+        a.footer__phone-link(href="tel:+380503371100") EMEA: +380503371100
+      .footer__phone-wrapper
+        - let secondPhoneIcon = './../components/Footer/images/phone.svg';
+          img.footer__phone-icon(src=secondPhoneIcon, alt="Phone-icon")
+        a.footer__phone-link(href="tel:+13477095999") USA: +13477095999
+      .footer__map-wrapper
         - let mapIcon = './../components/Footer/images/map-marker-alt-solid.svg';
           img.footer__map-icon(src=mapIcon, alt="Map-icon")
         .footer__map-box

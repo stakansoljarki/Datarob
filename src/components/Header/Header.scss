@@ -3,6 +3,8 @@
 	z-index: 99999;
 	top: 0;
 
+	transition: all 0.2s ease;
+
 	background-color: $primary-white-color;
 
 	&__burger {
@@ -123,7 +125,23 @@
 
 .cases {
 	.header {
-		background-color: transparent;
+		&__nav {
+			&-item {
+				&:nth-child(1) {
+					& > a {
+						&:before {
+							width: 100%;
+							}
+						}
+					}
+				}
+			}
+		&--noFill{
+			background-color: transparent;
+			}
+		&--fill{
+			background-color: $primary-white-color;
+			}
 		&__nav-bg {
 			background-color: transparent;
 			}

@@ -1,4 +1,4 @@
-import { header } from "../../components/Header/Header";
+import { header, headerFill } from "../../components/Header/Header";
 
 import SmoothScroll from "smooth-scroll";
 
@@ -9,6 +9,7 @@ document.addEventListener(
   () => {
     new SmoothScroll('a[href*="#"]');
     header();
+    headerFill();
   },
   { passive: false }
 );

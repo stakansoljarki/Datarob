@@ -87,6 +87,17 @@
 		font-size: 15pt;
 		font-weight: 600;
 
+		&-ua, &-usa {
+			text-decoration: none;
+
+			color: #606060;
+			}
+
+		&-ua {
+			margin-bottom: 50px;
+			}
+
+
 		svg {
 			position: absolute;
 			top: 50%;
@@ -120,8 +131,13 @@
 			}
 
 		&--padding-smaller {
-			max-width: 210px;
+			max-width: 270px;
 			padding-left: 43px;
+
+			& > svg {
+				top: 155px;
+				left: 225px;
+				}
 			}
 
 		}
@@ -354,6 +370,11 @@
 		&__link--padding-smaller {
 			max-width: none;
 			padding-left: 69px;
+
+			& > svg {
+				top: 124px;
+				left: 252px;
+				}
 			}
 		}
 	.tns {
@@ -379,6 +400,12 @@
 				max-height: calc(100% - 30px);
 				}
 			}
+
+		&__link--padding-smaller {
+			& > svg {
+				top: 153px;
+				}
+			}
 		}
 	}
 
@@ -394,9 +421,16 @@
 			max-width: initial;
 			margin-bottom: 30px;
 			}
+
 		&__slider-item {
 			& iframe {
 				min-height: 200px;
+				}
+			}
+
+		&__link--padding-smaller {
+			& > svg {
+				top: 123px;
 				}
 			}
 		}

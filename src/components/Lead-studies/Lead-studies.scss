@@ -1,4 +1,5 @@
 .lead-studies {
+	margin-top: -100px;
 	padding-bottom: 100px;
 
 	background: url("../../components/Lead-studies/images/lead-background.jpg") no-repeat center;
@@ -6,7 +7,7 @@
 	&__container {
 		position: relative;
 
-		margin-top: 100px;
+		padding-top: 200px;
 		}
 
 	&__wrap {
@@ -46,7 +47,7 @@
 
 	&__rocket {
 		position: absolute;
-		top: 387px;
+		top: 587px;
 		left: 558px;
 		}
 

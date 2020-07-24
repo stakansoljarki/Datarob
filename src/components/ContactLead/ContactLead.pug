@@ -17,12 +17,12 @@ section.contact-lead
           +chat-icon
           span Chatbot:
           | Follow the cat
-        a.contact-lead__link.contact-lead__link--padding-smaller(
-          href="tel:+380503371100"
-        )
-          +phone-icon
+        .contact-lead__link.contact-lead__link--padding-smaller
           span Telegram, Whatsapp, Viber:
-          | +38050 337 1100
+          a.contact-lead__link-ua(href="tel: +380503371100") +380503371100 EMEA
+
+          +phone-icon.contact-lead__phone-svg
+          a.contact-lead__link-usa(href="tel:+13477095999") +13477095999 USA
       form.contact-lead__form(
         action="https://formspree.io/xrgyojvq",
         method="post",

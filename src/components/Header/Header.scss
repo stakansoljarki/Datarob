@@ -121,6 +121,15 @@
 		}
 	}
 
+.cases {
+	.header {
+		background-color: transparent;
+		&__nav-bg {
+			background-color: transparent;
+			}
+		}
+	}
+
 @media only screen and (max-width: $max-width-l-device) {
 	.header {
 		&__container {

@@ -1,0 +1,71 @@
+section.lead-studies
+  include ../../components/Header/Header
+  .lead-studies__container.container
+    -
+      var leadImgList = [
+          {
+              imgClass: 'lead-studies__appointment',
+              imgSrc: '../../src/components/Lead-studies/images/lead-appointment.png',
+              imgAlt: 'planet logo'
+          },
+          {
+              imgClass: 'lead-studies__outreach',
+              imgSrc: '../../src/components/Lead-studies/images/lead-outreach.png',
+              imgAlt: 'planet logo'
+          },
+          {
+              imgClass: 'lead-studies__research',
+              imgSrc: '../../src/components/Lead-studies/images/lead-research.png',
+              imgAlt: 'planet logo'
+          }
+      ]
+    each leadImgItem in leadImgList
+      div(class=leadImgItem.imgClass)
+        img.lead-studies__img(src=leadImgItem.imgSrc, alt=leadImgItem.imgAlt)
+    .lead-studies__rocket
+      img(
+        src="../../src/components/Lead-studies/images/lead-rocket.png",
+        alt="rocket logo"
+      )
+      -
+        var dotList = [
+            {
+                dotClass: 'lead-studies__first-dot'
+            },
+            {
+                dotClass: 'lead-studies__second-dot'
+            },
+            {
+                dotClass: 'lead-studies__third-dot'
+            }
+        ]
+      each dotItem in dotList
+        span(class=dotItem.dotClass)
+    .lead-studies__wrap
+      - let leadStudiesTitle = 'Lead Generation Case Studies';
+      h1.lead-studies__title #{leadStudiesTitle}
+      - let leadStudiesDescription = 'Our goal is to maintain a personal approach to every Partner. We inject fuel into your business, so you can expect record-speed growth.';
+      p.lead-studies__description #{leadStudiesDescription}
+      .lead-studies__inner
+        -
+          var leadStudiesList = [
+              {
+                  description: 'A proven track record of B2B Sales in IT, Digital, and Tech',
+                  src: '../../src/components/Lead-studies/images/line-first.svg',
+                  imgClass: 'lead-studies__first-line'
+              },
+              {
+                  description: 'Focus on core business and sales processes while we handle all the routine work',
+                  src: '../../src/components/Lead-studies/images/line-second.svg',
+                  imgClass: 'lead-studies__second-line'
+              },
+              {
+                  description: 'Grow the number of leads in the pipeline and improve conversion, CPL and CAC',
+                  src: '../../src/components/Lead-studies/images/line-third.svg',
+                  imgClass: 'lead-studies__third-line'
+              }
+          ]
+        each leadStudiesItem in leadStudiesList
+          .lead-studies__card
+            p.lead-studies__card-description= leadStudiesItem.description
+            img(class=leadStudiesItem.imgClass, src=leadStudiesItem.src)

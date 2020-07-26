@@ -14,8 +14,9 @@ section.sales-boost
                 altImg: ''
             },
             {
-                imgPath: './../components/Sales-boost/images/sales-boost-3.svg',
-                altImg: ''
+                imgPath: './../components/Sales-boost/images/cold-calling.svg',
+                altImg: '',
+                customClass: "sales-boost__cold-calling"
             },
             {
                 imgPath: './../components/Sales-boost/images/sales-boost-4.svg',
@@ -26,5 +27,6 @@ section.sales-boost
         .sales-boost__source
           img.sales-boost__source-image(
             src=sourceBoostContent.imgPath,
-            alt=sourceBoostContent.altImg
+            alt=sourceBoostContent.altImg,
+            class=sourceBoostContent.customClass
           )

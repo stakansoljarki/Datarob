@@ -232,14 +232,17 @@
 				background-color: $primary-purple-color;
 
 				&--active {
-					top: 65px;
+					z-index: 9;
+					top: -33px;
 
 					display: flex;
+
+					padding: 60px 0 30px;
 					}
 				}
 
 			&-item {
-				margin: 0 auto;
+				margin: 0 auto 20px;
 
 				&:last-child {
 					margin: 0 auto 0;

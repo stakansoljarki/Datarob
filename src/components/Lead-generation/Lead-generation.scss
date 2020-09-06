@@ -8,7 +8,7 @@
 		color: $primary-purple-color;
 
 		font-size: 55px;
-		font-weight: 500;
+		font-weight: 600;
 		}
 
 	&__description {
@@ -52,14 +52,20 @@
 	.lead-generation {
 		padding-bottom: 50px;
 
+		&__container {
+			text-align: center;
+			}
+
 		&__title {
-			font-size: 45px;
+			font-size: 23px;
+			line-height: 29px;
 			}
 
 		&__description {
 			margin-bottom: 35px;
 
-			line-height: 30pt;
+			font-size: 16px;
+			line-height: 24px;
 			}
 
 		&__picture {
@@ -71,6 +77,9 @@
 
 		&__button {
 			margin-bottom: 40px;
+			}
+		&__button-link {
+			padding: 10px 31px;
 			}
 		}
 	}

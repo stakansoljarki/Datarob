@@ -7,6 +7,8 @@
 	&__container {
 		position: relative;
 
+		display: flex;
+
 		padding-top: 200px;
 		}
 
@@ -197,17 +199,108 @@
 			}
 		}
 	}
-
 @media only screen and (max-width: 650px) {
 	.lead-studies {
-		&__wrap {
-			align-items: center;
-
-			max-width: 100%;
-			}
-
-		&__outreach, &__appointment, &__research {
+		&__outreach,
+		&__appointment,
+		&__research {
 			display: none;
 			}
 		}
 	}
+//@media only screen and (max-width: 650px) {
+//	.lead-studies {
+//		&__wrap {
+//			align-items: flex-end;
+//
+//			max-width: 100%;
+//			}
+//		&__title,
+//		&__description {
+//			text-align: center;
+//		}
+//		&__title {
+//			font-size: 23px;
+//			line-height: 29px;
+//			margin-bottom: 15px;
+//			width: 100%;
+//			&:after {
+//				display: none;
+//			}
+//		}
+//		&__description {
+//			margin-bottom: 235px;
+//			font-size: 18px;
+//			line-height: 26px;
+//		}
+//
+//		&__card {
+//			max-width: 140px;
+//			padding: 10px 15px;
+//		}
+//		&__card-description {
+//			font-size: 14px;
+//			line-height: 20px;
+//		}
+//		&__img {
+//			width: 150%;
+//		}
+//		&__rocket-box,
+//		&__outreach,
+//		&__appointment,
+//		&__research {
+//			display: block;
+//			}
+//		&__outreach {
+//			top: 35%;
+//		}
+//		&__appointment {
+//			top: 40%;
+//			left: 15%;
+//		}
+//		&__research {
+//			left: 10%;
+//			top: 50%;
+//		}
+//		&__rocket-box {
+//			top: 70%;
+//			left: 5%;
+//			transform: rotate(-62deg);
+//
+//		}
+//		&__rocket {
+//			max-width: 300px;
+//		}
+//		&__rocket-box-after {
+//			position: relative;
+//			&:after {
+//				content: '';
+//				position: absolute;
+//				top: 0;
+//				left: 0;
+//				display: block;
+//				background: url("../../components/Lead-studies/images/Vector.svg") no-repeat center;
+//				width: 80px;
+//				height: 390px;
+//			}
+//		}
+//		&__first-dot {
+//			top: 35px;
+//			left: 275px;
+//		}
+//		&__second-dot {
+//			bottom: 82px;
+//			left: 164px;
+//		}
+//		&__third-dot {
+//			bottom: 25px;
+//			left: 58px;
+//		}
+//		&__card:after {
+//			display: block;
+//		}
+//		&__card:after {
+//			left: -7px;
+//		}
+//		}
+//	}

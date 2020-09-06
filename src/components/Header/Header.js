@@ -1,13 +1,12 @@
 export const header = () => {
-  const burger = document.querySelector(".header__burger"),
-    menu = document.querySelector(".header__nav-list");
+  const burger = document.querySelector(".burger-menu"),
+    menu = document.querySelector(".header__nav-list"),
+    navListActive = "header__nav-list--active",
+    burgerMenuActive = "burger-menu--active";
 
   burger.addEventListener("click", () => {
-    if (menu.classList.contains("header__nav-list--active")) {
-      menu.classList.remove("header__nav-list--active");
-    } else {
-      menu.classList.add("header__nav-list--active");
-    }
+    menu.classList.toggle(navListActive);
+    burger.classList.toggle(burgerMenuActive);
   });
 };
 

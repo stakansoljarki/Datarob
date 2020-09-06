@@ -3,11 +3,7 @@ header.header
     a.header__logo-link(href="/")
       - let logo = './../components/Header/images/logo.svg';
         img.header__logo(src=logo, alt="datarob-logo")
-    .footer__burger-box
-      img.header__burger(
-        src="./../components/Header/images/bars-solid.svg",
-        alt="burger"
-      )
+    include ../../components/Burger/burger
     nav.header__nav
       .header__nav-bg
       ul.header__nav-list

@@ -26,3 +26,32 @@ section.premium-lead
         .premium-lead__step-item
           .premium-lead__step-title #{leadContent.title}
           .premium-lead__step-description #{leadContent.description}
+      -
+        var premiumLeadSteps = [
+            {
+                premiumLeadStep
+            },
+            {
+                premiumLeadStep
+            },
+            {
+                premiumLeadStep
+            },
+            {
+                premiumLeadStep
+            },
+            {
+                premiumLeadStep
+            },
+            {
+                premiumLeadStep
+            },
+            {
+                premiumLeadStep
+            },
+
+        ]
+      each premiumLeadStep in premiumLeadSteps
+        img.premium-lead__step-img(
+          src="../../src/components/Premium-lead/images/step.svg"
+        )

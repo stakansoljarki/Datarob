@@ -123,7 +123,7 @@
 		&__title{
 			width: 100%;
 			margin-right: 0;
-			margin-bottom: 0;
+			margin-bottom: 10px;
 
 			text-align: center;
 
@@ -148,23 +148,25 @@
 
 		&__box {
 			display: flex;
-			flex-direction: row;
-			justify-content: flex-start;
+			align-items: center;
+			flex-direction: column;
 
-			width: 430px;
+			width: 100%;
+			max-width: 430px;
 			}
 
 		&__input {
 			max-width: 240px;
+			margin-bottom: 15px;
 
-			border-radius: 10px 0 0 10px;
+			border-radius: 5px;
 			}
 
 		&__submit {
 			max-width: 130px;
 			height: 56px;
 
-			border-radius: 0 10px 10px 0;
+			border-radius: 5px;
 			}
 		}
 	}
@@ -175,13 +177,25 @@
 			margin-bottom: 0;
 			}
 
-		&__title{
-			width: auto;
-			margin-right: 0;
-			}
-
 		&__form{
 			justify-content: space-between;
+			}
+		&__box {
+			flex-direction: row;
+			justify-content: flex-start;
+			}
+		&__title {
+			width: auto;
+			margin-right: 0;
+			margin-bottom: 0;
+			}
+		&__input {
+			margin-bottom: 0;
+
+			border-radius: 10px 0 0 10px;
+			}
+		&__submit {
+			border-radius: 0 10px 10px 0;
 			}
 		}
 	}
@@ -192,6 +206,31 @@
 			}
 		&__form{
 			justify-content: center;
+			}
+		}
+	}
+@media only screen and (max-width: $max-width-sm-device) {
+	.subscribe {
+		&__title {
+			font-size: 20px;
+			}
+		&__box {
+			justify-content: center;
+			}
+		&__input {
+			max-width: 220px;
+			margin-bottom: 15px;
+			padding: 8px 11px;
+
+			border-radius: 5px;
+			}
+		&__submit {
+			max-width: 115px;
+			height: 28px;
+
+			border-radius: 5px;
+
+			font-size: 14px;
 			}
 		}
 	}

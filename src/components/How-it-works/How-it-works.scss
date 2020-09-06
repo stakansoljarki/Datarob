@@ -134,31 +134,59 @@
 		&__step {
 			$this: &;
 
+			justify-content: center;
+
 			margin-bottom: 40px;
 
+			&-box {
+				margin-bottom: 10px;
+				}
 			&-item {
-				left: -35px;
+				position: static;
+
+				min-width: auto;
+				min-height: auto;
+
+				transform: rotate(0);
+
+				font-size: 16px;
+				line-height: 20px;
+
+				writing-mode: inherit;
 				}
 			}
 
 		&__text {
 			&-box {
-				padding-left: 35px;
+				padding-left: 0;
 				}
 			}
 
 		&__content-box {
+			flex-direction: column;
+			order: 1;
+
 			width: 100%;
-			padding-left: 20px;
+			padding-left: 0;
+
+			text-align: center;
 			}
 
+		&__title-step {
+			margin-bottom: 15px;
+
+			font-size: 16px;
+			line-height: 20px;
+			}
+		&__description {
+			font-size: 16px;
+			line-height: 24px;
+			}
 		&__img {
 			width: auto;
 
 			&-box {
-				display: none;
-
-				width: 30% !important;
+				width: 100%;
 				}
 			}
 		}
